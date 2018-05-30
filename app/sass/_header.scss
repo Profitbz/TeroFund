@@ -1,0 +1,214 @@
+.header-bar {
+  width: 100%;
+  position: absolute;
+  top: 2rem;
+  left: 3.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.aside-btn {
+  display: flex;
+  cursor: pointer;
+  color: #455074;
+  font-weight: bold;
+  margin-left: 10.2rem;
+}
+
+.aside-btn__text {
+  font-size: 14px;
+  line-height: 14px;
+  margin-left: 1rem;
+  transform: translateY(15%);
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 13.6rem;
+  font-size: 14px;
+  font-weight: bold;
+  color: $mainBlack;
+
+  &-notify {
+    margin-right: 1.3rem;
+  }
+
+  &-img {
+    width: 42px;
+    height: 42px;
+    background: $mainBlue;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3.3rem;
+
+    &__text {
+      transform: translateY(10%);
+    }
+  }
+}
+
+.header-info {
+
+  &_sub {
+    position: absolute;
+    top: 7.5rem;
+    left: 5.7rem;
+    display: none;
+  }
+
+  &_left {
+    position: absolute;
+    top: 7.5rem;
+    left: 21rem;
+  }
+
+  &_right {
+    position: absolute;
+    top: 7.5rem;
+    right: 5.6rem;
+  }
+
+  &__head {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.1rem;
+
+    &_sub {
+      margin-top: 0.3rem;
+      transform: translate(-4%, -10%);
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: $mainBlack;
+    margin-right: 1rem;
+  }
+
+  &__subtitle {
+    color: $mainGray;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  &__main {
+    width: 491px;
+    height: 60px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.info {
+
+  &__container {
+    &_sub {
+      width: 215px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    margin-right: 2.3rem;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-circle {
+    position: relative;
+    height: 30px;
+    width: 30px;
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(6%, -43%);
+      font-size: 7px;
+      letter-spacing: 1px;
+      font-weight: bold;
+
+      &_red {
+        color: $mainRed;
+      }
+
+      &_blue {
+        color: $mainBlue;
+      }
+
+      &_big {
+        transform: translate(-12%, -43%);
+      }
+    }
+
+    &__chart {
+      position: absolute;
+      top: -0.8rem;
+      left: -0.5rem;
+      height: 55px;
+      min-width: 55px;
+    }
+  }
+
+  &-text {
+    margin-left: 1.5rem;
+
+    &__top {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    &__currency {
+      font-size: 14px;
+      font-weight: bold;
+      color: $mainGray;
+    }
+
+    &__percent {
+      font-size: 8px;
+      font-weight: bold;
+      margin-left: 0.7rem;
+
+      &_blue {
+        color: $mainBlue;
+      }
+
+      &_red {
+        color: $mainRed;
+      }
+    }
+
+    &__bottom {
+      color: $mainBlack;
+    }
+
+    &__dollar {
+      font-size: 10px;
+    }
+
+    &__value {
+      font-size: 12px;
+    }
+
+  }
+}
+
+.highcharts-credits {
+  display: none;
+}
+
+.aside-btn__btn{
+  transform: translate(-41%, -18%) scale(0.4)
+}
+

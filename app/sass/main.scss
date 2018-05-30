@@ -1,0 +1,24 @@
+/* ----- base styles ---- */
+
+@import "vars";
+
+@import "fonts";
+
+@import "base";
+
+/* ---- libs ----- */
+
+@import "customSwitcher";
+@import "burgerBtn";
+
+/* ---- main styles ----- */
+
+@import "aside";
+@import "header";
+@import "content";
+@import "programmChart";
+@import "invest";
+@import "bonus";
+
+
+//@import "media"
