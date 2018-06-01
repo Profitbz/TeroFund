@@ -12,7 +12,7 @@
   color: #455074;
   margin-bottom: 1.1rem; }
   .invest__title {
-    margin-right: 5rem; }
+    margin-right: 8%; }
   .invest-input {
     text-align: center;
     position: relative;
@@ -20,7 +20,7 @@
     -webkit-transform: translateY(20%);
         -ms-transform: translateY(20%);
             transform: translateY(20%);
-    margin-right: 3.8rem; }
+    margin-right: 6%; }
     .invest-input::before {
       position: absolute;
       bottom: 0;
@@ -36,7 +36,7 @@
       text-align: center;
       padding-bottom: 0.7rem; }
   .invest__variable {
-    margin-right: 4rem; }
+    margin-right: 6.5%; }
   .invest-info {
     font-size: 10px;
     color: rgba(145, 155, 176, 0.5);
@@ -44,10 +44,10 @@
     -webkit-transform: translateY(13%);
         -ms-transform: translateY(13%);
             transform: translateY(13%);
-    margin-right: 2rem; }
+    margin-right: 3.5%; }
     .invest-info__text_blue {
       color: #304FFE; }
   .invest__equal {
-    margin-right: 2.6rem; }
+    margin-right: 4.5%; }
   .invest__value {
-    margin-right: 4rem; }
+    margin-right: 6.5%; }

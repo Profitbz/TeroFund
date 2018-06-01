@@ -19,7 +19,7 @@
   font-size: 14px;
   line-height: 14px;
   margin-left: 1rem;
-  transform: translateY(15%);
+  transform: translate(-159%, 19%);
 }
 
 .user {
@@ -30,6 +30,7 @@
   font-size: 14px;
   font-weight: bold;
   color: $mainBlack;
+  transform: translateY(-26%);
 
   &-notify {
     margin-right: 1.3rem;

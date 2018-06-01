@@ -9,7 +9,7 @@
   margin-bottom: 1.1rem;
 
   &__title {
-    margin-right: 5rem;
+    margin-right: 8%;
   }
 
   &-input {
@@ -17,7 +17,7 @@
     position: relative;
     width: 91px;
     transform: translateY(20%);
-    margin-right: 3.8rem;
+    margin-right: 6%;
 
     &::before {
       position: absolute;
@@ -38,7 +38,7 @@
   }
 
   &__variable {
-    margin-right: 4rem;
+    margin-right: 6.5%;
   }
 
   &-info {
@@ -46,7 +46,7 @@
     color: $mainGray;
     line-height: 1rem;
     transform: translateY(13%);
-    margin-right: 2rem;
+    margin-right: 3.5%;
 
 
     &__text_blue {
@@ -55,10 +55,10 @@
   }
 
   &__equal {
-    margin-right: 2.6rem;
+    margin-right: 4.5%;
   }
 
   &__value  {
-    margin-right: 4rem;
+    margin-right: 6.5%;
   }
 }

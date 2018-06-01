@@ -64,7 +64,7 @@ button {
 }
 
 input, select {
-  font-family: "Core Sans G", sans-serif;
+  font-family: "Core Sans", sans-serif;
   border: none;
   font-weight: inherit;
   font-size: inherit;
@@ -77,6 +77,11 @@ input, select {
   max-width: 1010px;
   min-width: 1010px;
   transition: all 0.6s;
+}
+
+.main-container_styless {
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .main-container.opened {
@@ -107,3 +112,22 @@ input, select {
   letter-spacing: 2px;
   border-radius: 60px;
 }
+
+.highcharts-data-label-connector {
+  visibility: hidden;
+  fill: red;
+}
+
+#donut tspan {
+  stroke: none;
+  cursor: pointer;
+}
+
+#donut .highcharts-point {
+  cursor: pointer;
+}
+
+//
+//.isVisible {
+//  visibility: visible;
+//}

@@ -6,10 +6,14 @@
 
 @import "base";
 
+@import "form";
+
 /* ---- libs ----- */
 
 @import "customSwitcher";
 @import "burgerBtn";
+@import "customSelect";
+@import "customCheckbox";
 
 /* ---- main styles ----- */
 
@@ -19,6 +23,9 @@
 @import "programmChart";
 @import "invest";
 @import "bonus";
-
+@import "wallet";
+@import "transaction";
+@import "profile";
+@import "investReport";
 
 //@import "media"
