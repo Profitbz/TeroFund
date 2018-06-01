@@ -94,6 +94,31 @@
     }
 
   }
+
+  &-colied {
+    overflow: hidden;
+  }
+}
+
+.colied {
+  position: relative;
+  height: 451px;
+
+  &__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+  }
+
+  &__chart {
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    top: 2rem;
+    left: 5.7%;
+  }
 }
 
 .donut-summary {

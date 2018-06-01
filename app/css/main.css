@@ -3105,6 +3105,25 @@ select {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
 
+.investReport-colied {
+  overflow: hidden; }
+
+.colied {
+  position: relative;
+  height: 451px; }
+  .colied__header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%; }
+  .colied__chart {
+    width: 900px;
+    margin: 0 auto;
+    position: absolute;
+    top: 2rem;
+    left: 5.7%; }
+
 .donut-summary {
   display: -webkit-box;
   display: -webkit-flex;

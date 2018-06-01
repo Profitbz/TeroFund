@@ -408,35 +408,23 @@
         </header>
         <main class="page-main">
             <ul class="transaction-links investReport__links" id="report">
-                <li class="transaction-links__item active"><a>Charts</a></li>
-                <li class="transaction-links__item"><a href="investReportPie.html#report">Pie</a></li>
+                <li class="transaction-links__item"><a href="investReport.html#report">Charts</a></li>
+                <li class="transaction-links__item "><a href="investReportPie.html#report">Pie</a></li>
                 <li class="transaction-links__item"><a href="walletusdh.html#transaction">Portfolio</a></li>
                 <li class="transaction-links__item"><a href="walletusdh.html#transaction">Deployed</a></li>
-                <li class="transaction-links__item"><a href="investReportColied.html#report">Colied</a></li>
+                <li class="transaction-links__item active"><a>Colied</a></li>
             </ul>
-            <div class="investReport-chart__first main-container">
-                <h5 class="transaction__title investReport__title">Porfolio Volume In USD</h5>
-                <svg style="height: 0">
-                    <defs>
-                        <linearGradient id="gradient-0" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0" />
-                            <stop offset="1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <div class="investReportChart" id="investReportChart1"></div>
-            </div>
-            <div class="investReport-chart__second main-container">
-                <h5 class="transaction__title investReport__title">Porfolio Volume In BTC</h5>
-                <svg style="height: 0">
-                    <defs>
-                        <linearGradient id="gradient-1" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="0" />
-                            <stop offset="1" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <div class="investReportChart" id="investReportChart2"></div>
+            <div class="investReport-colied colied main-container">
+                <div class="investReport-donut__header colied__header">
+                    <h5 class="transaction__title">Fund Volatility</h5>
+                    <div class="investReport-donut__icon">
+                        <div class="investReport-donut__img investReport-donut__img_red"></div>
+                        <span class="investReport-donut__text investReport-donut__text_mr">USD/%</span>
+                        <div class="investReport-donut__img investReport-donut__img_blue"></div>
+                        <span class="investReport-donut__text">BTC/%</span>
+                    </div>
+                </div>
+                <div class="colied__chart" id="coliedChart"></div>
             </div>
         </main>
     </div>
@@ -448,7 +436,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script type="text/javascript" src="../js/investChart.js"></script>
+<script type="text/javascript" src="../js/coliedChart.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/customSelect.js"></script>
 
