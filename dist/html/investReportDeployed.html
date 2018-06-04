@@ -409,90 +409,196 @@
         <main class="page-main">
             <ul class="transaction-links investReport__links" id="report">
                 <li class="transaction-links__item"><a href="investReport.html#report">Charts</a></li>
-                <li class="transaction-links__item active"><a>Pie</a></li>
-                <li class="transaction-links__item"><a href="investReportPortfolio.html#report">Portfolio</a></li>
-                <li class="transaction-links__item"><a href="investReportDeployed.html#report">Deployed</a></li>
-                <li class="transaction-links__item"><a href="investReportColied.html#report">Colied</a></li>
+                <li class="transaction-links__item "><a href="investReportPie.html#report">Pie</a></li>
+                <li class="transaction-links__item"><a href="investReportPortfolio.html">Portfolio</a></li>
+                <li class="transaction-links__item active"><a>Deployed</a></li>
+                <li class="transaction-links__item "><a href="investReportColied.html#report">Colied</a></li>
             </ul>
-            <div class="investReport-donut main-container">
-                <div class="investReport-donut__header">
-                    <h5 class="transaction__title">Porfolio Composition</h5>
-                    <div class="investReport-donut__icon">
-                        <div class="investReport-donut__img investReport-donut__img_red"></div>
-                        <span class="investReport-donut__text investReport-donut__text_mr">Active</span>
-                        <div class="investReport-donut__img investReport-donut__img_blue"></div>
-                        <span class="investReport-donut__text">Pasive</span>
+            <div class="investReport-deployed deployed main-container main-container_styless">
+                <div class="deployed__row table-row table-row_header">
+                    <div class="table-item deployed__date">
+                        Date
+                    </div>
+                    <div class="table-item deployed__usd-profit">
+                        USD/Profit Value
+                    </div>
+                    <div class="table-item deployed__coin-profit-first">
+                        BTC/Profit Value
+                    </div>
+                    <div class="table-item deployed__coin-profit-second">
+                        BTC/Profit Value
+                    </div>
+                    <div class="table-item deployed__change">
+                        12h -% change/Profit
+                    </div>
+                    <div class="table-item deployed__lifetime">
+                        Lifetime /Profit
                     </div>
                 </div>
-                <div class="investReport-donut__main">
-                    <div class="investReport-donut__chart" id="donut">
-
+                <div class="deployed__row table-row table-row_body active">
+                    <div class="table-item deployed__date">
+                        04.27.18 - 00:00
                     </div>
-                    <div class="investReport-donut__summ">
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                21.3 %
-                            </div>
-                            <span class="donut-summary__name">Bitcoin</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
-                            </div>
-                            <span class="donut-summary__name">Ethereum</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
-                            </div>
-                            <span class="donut-summary__name">Tether USD</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                13.8 %
-                            </div>
-                            <span class="donut-summary__name">Waves</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
-                            </div>
-                            <span class="donut-summary__name">Qtum</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                10.2 %
-                            </div>
-                            <span class="donut-summary__name">Cindicator</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                4.4 %
-                            </div>
-                            <span class="donut-summary__name">0x</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                1.8 %
-                            </div>
-                            <span class="donut-summary__name">WaBi</span>
-                        </div>
-
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                1.8 %
-                            </div>
-                            <span class="donut-summary__name">Monero</span>
-                        </div>
-
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                3.4 %
-                            </div>
-                            <span class="donut-summary__name">Storj</span>
-                        </div>
+                    <div class="table-item deployed__usd-profit">
+                        9119.510
+                    </div>
+                    <div class="table-item deployed__coin-profit-first">
+                        7066113.675514
+                    </div>
+                    <div class="table-item deployed__coin-profit-second">
+                        774.834797
+                    </div>
+                    <div class="table-item deployed__change">
+                        -0.65
+                    </div>
+                    <div class="table-item deployed__lifetime">
+                        663.70
                     </div>
                 </div>
+                <div class="deployed__row table-row table-row_body active">
+                <div class="table-item deployed__date">
+                    04.27.18 - 00:00
+                </div>
+                <div class="table-item deployed__usd-profit">
+                    9119.510
+                </div>
+                <div class="table-item deployed__coin-profit-first">
+                    7066113.675514
+                </div>
+                <div class="table-item deployed__coin-profit-second">
+                    774.834797
+                </div>
+                <div class="table-item deployed__change">
+                    -0.65
+                </div>
+                <div class="table-item deployed__lifetime">
+                    663.70
+                </div>
+            </div>
+                <div class="deployed__row table-row table-row_body active">
+                    <div class="table-item deployed__date">
+                        04.27.18 - 00:00
+                    </div>
+                    <div class="table-item deployed__usd-profit">
+                        9119.510
+                    </div>
+                    <div class="table-item deployed__coin-profit-first">
+                        7066113.675514
+                    </div>
+                    <div class="table-item deployed__coin-profit-second">
+                        774.834797
+                    </div>
+                    <div class="table-item deployed__change">
+                        -0.65
+                    </div>
+                    <div class="table-item deployed__lifetime">
+                        663.70
+                    </div>
+                </div>
+                <div class="deployed__row table-row table-row_body active">
+                    <div class="table-item deployed__date">
+                        04.27.18 - 00:00
+                    </div>
+                    <div class="table-item deployed__usd-profit">
+                        9119.510
+                    </div>
+                    <div class="table-item deployed__coin-profit-first">
+                        7066113.675514
+                    </div>
+                    <div class="table-item deployed__coin-profit-second">
+                        774.834797
+                    </div>
+                    <div class="table-item deployed__change">
+                        -0.65
+                    </div>
+                    <div class="table-item deployed__lifetime">
+                        663.70
+                    </div>
+                </div>
+                <div class="deployed__row table-row table-row_body shadowed">
+                    <div class="table-item deployed__date">
+                        04.27.18 - 00:00
+                    </div>
+                    <div class="table-item deployed__usd-profit">
+                        9119.510
+                    </div>
+                    <div class="table-item deployed__coin-profit-first">
+                        7066113.675514
+                    </div>
+                    <div class="table-item deployed__coin-profit-second">
+                        774.834797
+                    </div>
+                    <div class="table-item deployed__change">
+                        -0.65
+                    </div>
+                    <div class="table-item deployed__lifetime">
+                        663.70
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#" class="pagination-left">
+                    <div class="pagination-left__icon">
+                        <svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <defs>
+                                <path d="M10.4142136,12 L15.7071068,6.70710678 C16.0976311,6.31658249 16.0976311,5.68341751 15.7071068,5.29289322 C15.3165825,4.90236893 14.6834175,4.90236893 14.2928932,5.29289322 L8.29289322,11.2928932 C7.90236893,11.6834175 7.90236893,12.3165825 8.29289322,12.7071068 L14.2928932,18.7071068 C14.6834175,19.0976311 15.3165825,19.0976311 15.7071068,18.7071068 C16.0976311,18.3165825 16.0976311,17.6834175 15.7071068,17.2928932 L10.4142136,12 Z" id="path-1000"></path>
+                            </defs>
+                            <g id="Fund0" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Invest-Report-Portfolio-white-new0" transform="translate(-338.000000, -737.000000)">
+                                    <g id="Navigation0" transform="translate(330.000000, 732.000000)">
+                                        <g id="Back0">
+                                            <g id="chevron-left0">
+                                                <mask id="mask-20" fill="white">
+                                                    <use xlink:href="#path-1000"></use>
+                                                </mask>
+                                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1000"></use>
+                                                <g id="COLOR/-black" mask="url(#mask-20)" fill="#000000" fill-rule="evenodd">
+                                                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <span class="pagination-left__text">BACK</span>
+                </a>
+                <div class="pagination-center">
+                    <a href="#" class="pagination-center__number">1</a>
+                    <a href="#" class="pagination-center__number active">2</a>
+                    <a href="#" class="pagination-center__number">3</a>
+                    <a href="#" class="pagination-center__number">4</a>
+                    <a href="#" class="pagination-center__number">5</a>
+                    <span class="pagination-center__dots">...</span>
+                    <a href="#" class="pagination-center__number">15</a>
+                </div>
+                <a href="#" class="pagination-right">
+                    <span class="pagination-right__text">NEXT</span>
+                    <div class="pagination-right__icon">
+                        <svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path d="M10.4142136,12 L15.7071068,6.70710678 C16.0976311,6.31658249 16.0976311,5.68341751 15.7071068,5.29289322 C15.3165825,4.90236893 14.6834175,4.90236893 14.2928932,5.29289322 L8.29289322,11.2928932 C7.90236893,11.6834175 7.90236893,12.3165825 8.29289322,12.7071068 L14.2928932,18.7071068 C14.6834175,19.0976311 15.3165825,19.0976311 15.7071068,18.7071068 C16.0976311,18.3165825 16.0976311,17.6834175 15.7071068,17.2928932 L10.4142136,12 Z" id="path-100"></path>
+                            </defs>
+                            <g id="Fund1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Invest-Report-Portfolio-white-new1" transform="translate(-1331.000000, -737.000000)">
+                                    <g id="Navigation1" transform="translate(330.000000, 732.000000)">
+                                        <g id="Next1" transform="translate(968.000000, 12.000000) scale(-1, 1) translate(-968.000000, -12.000000) translate(919.000000, 0.000000)">
+                                            <g id="chevron-left1">
+                                                <mask id="mask-21" fill="white">
+                                                    <use xlink:href="#path-100"></use>
+                                                </mask>
+                                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-100"></use>
+                                                <g id="COLOR/-black" mask="url(#mask-21)" fill="#000000" fill-rule="evenodd">
+                                                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </a>
             </div>
         </main>
     </div>
@@ -505,7 +611,6 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script type="text/javascript" src="../js/donutChart.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/customSelect.js"></script>
 

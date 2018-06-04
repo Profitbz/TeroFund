@@ -1,6 +1,10 @@
 .page-wrapper {
   display: flex;
   position: relative;
+
+  &.dark {
+    background: #202749;
+  }
 }
 
 .page-aside {
@@ -188,6 +192,12 @@
 
 .color-changer__text_inactive {
   color: $mainGray;
+}
+
+.page-wrapper.dark {
+  .page-aside {
+    background: linear-gradient(360deg, #202749 0%, #141930 100%);
+  }
 }
 
 

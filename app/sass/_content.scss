@@ -69,3 +69,9 @@
     align-items: center;
   }
 }
+
+.page-wrapper.dark {
+  .page-main {
+    background: #202749;
+  }
+}

@@ -130,8 +130,8 @@
                         <span>My Profile</span>
                     </a>
                 </li>
-                <li class="main-nav__item active">
-                    <a>
+                <li class="main-nav__item">
+                    <a href="investReport.html">
                         <svg width="20px" height="12px" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs>
                                 <path d="M17.154822,5.83333333 L14.1666667,5.83333333 C13.7064294,5.83333333 13.3333333,5.46023729 13.3333333,5 C13.3333333,4.53976271 13.7064294,4.16666667 14.1666667,4.16666667 L19.1666667,4.16666667 C19.626904,4.16666667 20,4.53976271 20,5 L20,10 C20,10.4602373 19.626904,10.8333333 19.1666667,10.8333333 C18.7064294,10.8333333 18.3333333,10.4602373 18.3333333,10 L18.3333333,7.01184464 L11.8392557,13.5059223 C11.5138187,13.8313592 10.9861813,13.8313592 10.6607443,13.5059223 L7.08333333,9.9285113 L1.42258898,15.5892557 C1.09715207,15.9146926 0.569514592,15.9146926 0.244077682,15.5892557 C-0.0813592274,15.2638187 -0.0813592274,14.7361813 0.244077682,14.4107443 L6.49407768,8.16074435 C6.81951459,7.83530744 7.34715207,7.83530744 7.67258898,8.16074435 L11.25,11.7381554 L17.154822,5.83333333 Z" id="path-14"></path>
@@ -161,8 +161,8 @@
                         <span>Invest Report</span>
                     </a>
                 </li>
-                <li class="main-nav__item">
-                    <a href="exchange.html">
+                <li class="main-nav__item active">
+                    <a>
                         <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
                             <defs>
@@ -407,93 +407,445 @@
             </div>
         </header>
         <main class="page-main">
-            <ul class="transaction-links investReport__links" id="report">
-                <li class="transaction-links__item"><a href="investReport.html#report">Charts</a></li>
-                <li class="transaction-links__item active"><a>Pie</a></li>
-                <li class="transaction-links__item"><a href="investReportPortfolio.html#report">Portfolio</a></li>
-                <li class="transaction-links__item"><a href="investReportDeployed.html#report">Deployed</a></li>
-                <li class="transaction-links__item"><a href="investReportColied.html#report">Colied</a></li>
-            </ul>
-            <div class="investReport-donut main-container">
-                <div class="investReport-donut__header">
-                    <h5 class="transaction__title">Porfolio Composition</h5>
-                    <div class="investReport-donut__icon">
-                        <div class="investReport-donut__img investReport-donut__img_red"></div>
-                        <span class="investReport-donut__text investReport-donut__text_mr">Active</span>
-                        <div class="investReport-donut__img investReport-donut__img_blue"></div>
-                        <span class="investReport-donut__text">Pasive</span>
+            <div class="exchange main-container main-container_styless" id="exchange">
+                <div class="exchange-form">
+                    <div class="exchange-form__item">
+                        <div class="header-info__head exchange-form__head">
+                            <h3 class="header-info__title">Buy</h3>
+                            <span class="header-info__subtitle">SSC</span>
+                        </div>
+                        <div class="exchange-form__content">
+                            <a href="#" class="exchange-form__link">Deposit BTC</a>
+                            <div class="exchange-form__container">
+                                <div class="exchange-form__title">
+                                    <div class="exchange-form__title-top">You Have:</div>
+                                    <div class="exchange-form__title-main">0.00000000
+                                        <span class="exchange-form__title-sign">SSC</span></div>
+                                </div>
+                                <div class="exchange-form__title">
+                                    <div class="exchange-form__title-top">Lowest Ask:</div>
+                                    <div class="exchange-form__title-main">0.07397762
+                                        <span class="exchange-form__title-sign">BTC</span></div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input" placeholder="Write amount">
+                                        <span class="form__title">Amount</span>
+                                        <span class="form__warn active">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">SSC</span>
+                                    </div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input" placeholder="Write your price">
+                                        <span class="form__title">Price</span>
+                                        <span class="form__warn">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">BTC</span>
+                                    </div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input exchange-input__total" placeholder="How total">
+                                        <span class="form__title">Total</span>
+                                        <span class="form__warn">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">BTC</span>
+                                    </div>
+                                </div>
+                                <button class="exchange-form__btn main-btn">Buy</button>
+                            </div>
+                            <div class="exchange-form__free">
+                                Free <span class="exchange-form__free-value"> 0.20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange-form__item">
+                        <div class="header-info__head exchange-form__head">
+                            <h3 class="header-info__title">Sell</h3>
+                            <span class="header-info__subtitle">SSC</span>
+                        </div>
+                        <div class="exchange-form__content">
+                            <a href="#" class="exchange-form__link">Deposit SSC</a>
+                            <div class="exchange-form__container">
+                                <div class="exchange-form__title">
+                                    <div class="exchange-form__title-top">You Have:</div>
+                                    <div class="exchange-form__title-main">2.69581672
+                                        <span class="exchange-form__title-sign">SSC</span></div>
+                                </div>
+                                <div class="exchange-form__title">
+                                    <div class="exchange-form__title-top">Highest Bid:</div>
+                                    <div class="exchange-form__title-main">0.07397762
+                                        <span class="exchange-form__title-sign">BTC</span></div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input" placeholder="Write amount">
+                                        <span class="form__title">Amount</span>
+                                        <span class="form__warn active">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">SSC</span>
+                                    </div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input" placeholder="Write your price">
+                                        <span class="form__title">Price</span>
+                                        <span class="form__warn">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">BTC</span>
+                                    </div>
+                                </div>
+                                <div class="exchange-form__input">
+                                    <div class="form__container exchange-input">
+                                        <input type="text" class="form__input exchange-input__total" placeholder="How total">
+                                        <span class="form__title">Total</span>
+                                        <span class="form__warn">Correct your info after the enter!</span>
+                                        <span class="exchange-input__currency">BTC</span>
+                                    </div>
+                                </div>
+                                <button class="exchange-form__btn exchange-form__btn_sell main-btn">Sell</button>
+                            </div>
+                            <div class="exchange-form__free">
+                                Free <span class="exchange-form__free-value"> 0.20%</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="investReport-donut__main">
-                    <div class="investReport-donut__chart" id="donut">
-
+                <div class="exchange-orders">
+                    <div class="exchange-orders__wrapper">
+                        <div class="exchange-orders__item">
+                            <div class="exchange-orders__header">
+                                <div class="exchange-orders__title">
+                                    Sell Orders
+                                    <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <path d="M15.1655787,4.12962963 L12.4399322,1.34719884 C12.1919803,1.09408124 12.1919803,0.683696535 12.4399322,0.430578938 C12.6878841,0.177461342 13.0898936,0.177461342 13.3378456,0.430578938 L17.1473694,4.31946783 C17.3953213,4.57258542 17.3953213,4.98297013 17.1473694,5.23608773 L13.3378456,9.12497662 C13.0898936,9.37809421 12.6878841,9.37809421 12.4399322,9.12497662 C12.1919803,8.87185902 12.1919803,8.46147431 12.4399322,8.20835672 L15.1655787,5.42592593 L1.79365079,5.42592593 C1.30273102,5.42592593 0.904761905,5.13574012 0.904761905,4.77777778 C0.904761905,4.41981544 1.30273102,4.12962963 1.79365079,4.12962963 L15.1655787,4.12962963 Z" id="path-1201"></path>
+                                            <path d="M15.1655787,4.12962963 L12.4399322,1.34719884 C12.1919803,1.09408124 12.1919803,0.683696535 12.4399322,0.430578938 C12.6878841,0.177461342 13.0898936,0.177461342 13.3378456,0.430578938 L17.1473694,4.31946783 C17.3953213,4.57258542 17.3953213,4.98297013 17.1473694,5.23608773 L13.3378456,9.12497662 C13.0898936,9.37809421 12.6878841,9.37809421 12.4399322,9.12497662 C12.1919803,8.87185902 12.1919803,8.46147431 12.4399322,8.20835672 L15.1655787,5.42592593 L1.79365079,5.42592593 C1.30273102,5.42592593 0.904761905,5.13574012 0.904761905,4.77777778 C0.904761905,4.41981544 1.30273102,4.12962963 1.79365079,4.12962963 L15.1655787,4.12962963 Z" id="path-3201"></path>
+                                        </defs>
+                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Exchange-white201" transform="translate(-460.000000, -609.000000)">
+                                                <g id="3201" transform="translate(337.000000, 609.000000)">
+                                                    <g id="Title-1201">
+                                                        <g id="icon201" transform="translate(123.000000, 0.000000)">
+                                                            <g id="arrow-right201" transform="translate(9.238095, 5.000000) scale(-1, 1) translate(-9.238095, -5.000000) translate(0.238095, 0.000000)">
+                                                                <mask id="mask-2201" fill="white">
+                                                                    <use xlink:href="#path-1201"></use>
+                                                                </mask>
+                                                                <use id="Combined-Shape201" fill="#000000" fill-rule="nonzero" xlink:href="#path-1201"></use>
+                                                                <g id="COLOR/-black201" mask="url(#mask-2201)" fill="#000000">
+                                                                    <g transform="translate(3.000000, -3.000000)" id="Rectangle201">
+                                                                        <rect x="0" y="0" width="14.9760006" height="15.9744006"></rect>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                            <g id="arrow-right201" transform="translate(0.000000, 10.000000)">
+                                                                <mask id="mask-4201" fill="white">
+                                                                    <use xlink:href="#path-3201"></use>
+                                                                </mask>
+                                                                <use id="Combined-Shape201" fill="#000000" fill-rule="nonzero" xlink:href="#path-3201"></use>
+                                                                <g id="COLOR/-black201" mask="url(#mask-4201)" fill="#000000">
+                                                                    <g transform="translate(-1.000000, -3.000000)" id="Rectangle201">
+                                                                        <rect x="0" y="0" width="14.9760006" height="15.9744006"></rect>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="exchange-orders__value">
+                                    Total: <span class="exchange-orders__number">2345.123</span> BTC
+                                </div>
+                            </div>
+                            <div class="exchange-orders__table">
+                                <div class="exchange-orders__row table-row table-row_header">
+                                    <div class="table-item exchange-orders__price">
+                                        BTC Price
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        SSC Amount
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        BTC Total
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body shadowed">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="exchange-orders__item">
+                            <div class="exchange-orders__header">
+                                <div class="exchange-orders__title">
+                                    Sell Orders
+                                    <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <defs>
+                                            <path d="M15.1655787,4.12962963 L12.4399322,1.34719884 C12.1919803,1.09408124 12.1919803,0.683696535 12.4399322,0.430578938 C12.6878841,0.177461342 13.0898936,0.177461342 13.3378456,0.430578938 L17.1473694,4.31946783 C17.3953213,4.57258542 17.3953213,4.98297013 17.1473694,5.23608773 L13.3378456,9.12497662 C13.0898936,9.37809421 12.6878841,9.37809421 12.4399322,9.12497662 C12.1919803,8.87185902 12.1919803,8.46147431 12.4399322,8.20835672 L15.1655787,5.42592593 L1.79365079,5.42592593 C1.30273102,5.42592593 0.904761905,5.13574012 0.904761905,4.77777778 C0.904761905,4.41981544 1.30273102,4.12962963 1.79365079,4.12962963 L15.1655787,4.12962963 Z" id="path-1201"></path>
+                                            <path d="M15.1655787,4.12962963 L12.4399322,1.34719884 C12.1919803,1.09408124 12.1919803,0.683696535 12.4399322,0.430578938 C12.6878841,0.177461342 13.0898936,0.177461342 13.3378456,0.430578938 L17.1473694,4.31946783 C17.3953213,4.57258542 17.3953213,4.98297013 17.1473694,5.23608773 L13.3378456,9.12497662 C13.0898936,9.37809421 12.6878841,9.37809421 12.4399322,9.12497662 C12.1919803,8.87185902 12.1919803,8.46147431 12.4399322,8.20835672 L15.1655787,5.42592593 L1.79365079,5.42592593 C1.30273102,5.42592593 0.904761905,5.13574012 0.904761905,4.77777778 C0.904761905,4.41981544 1.30273102,4.12962963 1.79365079,4.12962963 L15.1655787,4.12962963 Z" id="path-3201"></path>
+                                        </defs>
+                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Exchange-white201" transform="translate(-460.000000, -609.000000)">
+                                                <g id="3201" transform="translate(337.000000, 609.000000)">
+                                                    <g id="Title-1201">
+                                                        <g id="icon201" transform="translate(123.000000, 0.000000)">
+                                                            <g id="arrow-right201" transform="translate(9.238095, 5.000000) scale(-1, 1) translate(-9.238095, -5.000000) translate(0.238095, 0.000000)">
+                                                                <mask id="mask-2201" fill="white">
+                                                                    <use xlink:href="#path-1201"></use>
+                                                                </mask>
+                                                                <use id="Combined-Shape201" fill="#000000" fill-rule="nonzero" xlink:href="#path-1201"></use>
+                                                                <g id="COLOR/-black201" mask="url(#mask-2201)" fill="#000000">
+                                                                    <g transform="translate(3.000000, -3.000000)" id="Rectangle201">
+                                                                        <rect x="0" y="0" width="14.9760006" height="15.9744006"></rect>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                            <g id="arrow-right201" transform="translate(0.000000, 10.000000)">
+                                                                <mask id="mask-4201" fill="white">
+                                                                    <use xlink:href="#path-3201"></use>
+                                                                </mask>
+                                                                <use id="Combined-Shape201" fill="#000000" fill-rule="nonzero" xlink:href="#path-3201"></use>
+                                                                <g id="COLOR/-black201" mask="url(#mask-4201)" fill="#000000">
+                                                                    <g transform="translate(-1.000000, -3.000000)" id="Rectangle201">
+                                                                        <rect x="0" y="0" width="14.9760006" height="15.9744006"></rect>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="exchange-orders__value">
+                                    Total: <span class="exchange-orders__number">2345.123</span> BTC
+                                </div>
+                            </div>
+                            <div class="exchange-orders__table">
+                                <div class="exchange-orders__row table-row table-row_header">
+                                    <div class="table-item exchange-orders__price">
+                                        BTC Price
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        SSC Amount
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        BTC Total
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body active">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                                <div class="exchange-orders__row table-row table-row_body shadowed">
+                                    <div class="table-item exchange-orders__price">
+                                        0.07383578
+                                    </div>
+                                    <div class="table-item exchange-orders__amount">
+                                        0.11273326
+                                    </div>
+                                    <div class="table-item exchange-orders__total">
+                                        0.00832375
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="investReport-donut__summ">
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                21.3 %
+                    <button class="exchange-orders__btn main-btn">Show all</button>
+                </div>
+                <div class="exchange-open">
+                    <h4 class="exchange-open__header">
+                        My Open Orders
+                    </h4>
+                    <div class="exchange-open__table main-container main-container_styless">
+                        <div class="exchange-open__row table-row table-row_header">
+                            <div class="table-item exchange-open__price">
+                                Price
                             </div>
-                            <span class="donut-summary__name">Bitcoin</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
+                            <div class="table-item exchange-open__first">
+                                ETH
                             </div>
-                            <span class="donut-summary__name">Ethereum</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
+                            <div class="table-item exchange-open__second">
+                                BTC
                             </div>
-                            <span class="donut-summary__name">Tether USD</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                13.8 %
+                            <div class="table-item exchange-open__description">
+                                Description
                             </div>
-                            <span class="donut-summary__name">Waves</span>
                         </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                15.3 %
+                        <div class="table-row table-row_empty"><span>You have no open orders!</span></div>
+                    </div>
+                </div>
+                <div class="exchange-history">
+                    <h4 class="exchange-open__header">
+                        Trade History
+                    </h4>
+                    <ul class="transaction-links exchange-history__links">
+                        <li class="transaction-links__item"><a href="#">Market Trades</a></li>
+                        <li class="transaction-links__item active"><a>My Trades</a></li>
+                    </ul>
+                    <div class="exchange-history__table main-container main-container_styless">
+                        <div class="exchange-history__row table-row table-row_header">
+                            <div class="table-item exchange-history__date">
+                                Date
                             </div>
-                            <span class="donut-summary__name">Qtum</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                10.2 %
+                            <div class="table-item exchange-history__type">
+                                Type
                             </div>
-                            <span class="donut-summary__name">Cindicator</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                4.4 %
+                            <div class="table-item exchange-history__price">
+                                Price BTC
                             </div>
-                            <span class="donut-summary__name">0x</span>
-                        </div>
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                1.8 %
+                            <div class="table-item exchange-history__amount">
+                                Amount ETH
                             </div>
-                            <span class="donut-summary__name">WaBi</span>
-                        </div>
-
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                1.8 %
+                            <div class="table-item exchange-history__total">
+                                Total BTC
                             </div>
-                            <span class="donut-summary__name">Monero</span>
                         </div>
-
-                        <div class="investReport-donut__element donut-summary">
-                            <div class="donut-summary__btn">
-                                3.4 %
+                        <div class="exchange-history__row table-row table-row_body active">
+                            <div class="table-item exchange-history__date">
+                                04.27.18 - 00:00:00
                             </div>
-                            <span class="donut-summary__name">Storj</span>
+                            <div class="table-item exchange-history__type">
+                                Sell
+                            </div>
+                            <div class="table-item exchange-history__price">
+                                0.06993025
+                            </div>
+                            <div class="table-item exchange-history__amount">
+                                0.0832375
+                            </div>
+                            <div class="table-item exchange-history__total">
+                                0.00832375
+                            </div>
                         </div>
+                        <div class="exchange-history__row table-row table-row_body active">
+                            <div class="table-item exchange-history__date">
+                                04.27.18 - 00:00:00
+                            </div>
+                            <div class="table-item exchange-history__type">
+                                Sell
+                            </div>
+                            <div class="table-item exchange-history__price">
+                                0.06993025
+                            </div>
+                            <div class="table-item exchange-history__amount">
+                                0.0832375
+                            </div>
+                            <div class="table-item exchange-history__total">
+                                0.00832375
+                            </div>
+                        </div>
+                        <div class="exchange-history__row table-row table-row_body active">
+                            <div class="table-item exchange-history__date">
+                                04.27.18 - 00:00:00
+                            </div>
+                            <div class="table-item exchange-history__type">
+                                Sell
+                            </div>
+                            <div class="table-item exchange-history__price">
+                                0.06993025
+                            </div>
+                            <div class="table-item exchange-history__amount">
+                                0.0832375
+                            </div>
+                            <div class="table-item exchange-history__total">
+                                0.00832375
+                            </div>
+                        </div>
+                        <div class="exchange-history__row table-row table-row_body shadowed">
+                            <div class="table-item exchange-history__date">
+                                04.27.18 - 00:00:00
+                            </div>
+                            <div class="table-item exchange-history__type">
+                                Sell
+                            </div>
+                            <div class="table-item exchange-history__price">
+                                0.06993025
+                            </div>
+                            <div class="table-item exchange-history__amount">
+                                0.0832375
+                            </div>
+                            <div class="table-item exchange-history__total">
+                                0.00832375
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exchange-history__btn-container">
+                        <button class="exchange-history__btn main-btn">Show All</button>
                     </div>
                 </div>
             </div>
+
         </main>
     </div>
 </div>
@@ -505,7 +857,6 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script type="text/javascript" src="../js/donutChart.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/customSelect.js"></script>
 
