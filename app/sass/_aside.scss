@@ -1,6 +1,7 @@
 .page-wrapper {
   display: flex;
   position: relative;
+  min-width: 1440px;
 
   &.dark {
     background: #202749;
@@ -33,10 +34,11 @@
   &_header {
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
+    transform: translateY(-30%);
 
     &.visible {
-      transition: all 0.4s;
+      transition: opacity 0.4s;
       opacity: 1;
       visibility: visible;
     }

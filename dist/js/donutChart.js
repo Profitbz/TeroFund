@@ -1,6 +1,6 @@
 $(function() {
     // Create the chart
-    $('#donut').highcharts({
+    var donutChart = Highcharts.chart('donut', {
         chart: {
             type: 'pie',
             margin: 40
@@ -35,8 +35,6 @@ $(function() {
                                 this.points[key].slice(false);
                             }
                         }
-
-
                     }
                 }
             }
@@ -64,6 +62,11 @@ $(function() {
                                 color: "#919BB0"
                             });
 
+                            $('#donut .highcharts-point')[this.index].setAttribute('stroke','');
+
+                            $('.donut-summary')[this.index].classList.add('hover');
+
+
                             this.connector.element.classList.add('isVisible');
 
                             var point = this,
@@ -86,6 +89,8 @@ $(function() {
                             this.dataLabel.css({
                                 color: "transparent"
                             });
+                            $('#donut .highcharts-point')[this.index].setAttribute('stroke','#fff');
+                            $('.donut-summary')[this.index].classList.remove('hover');
                         }
                     }
                 },
@@ -96,36 +101,76 @@ $(function() {
                         },
                     }
                 }
-            },
-            // {
-            //     name: '',
-            //
-            //     data: [{name: "21.3", y: 21.3},["15.3",15.3],["13.8", 13.8],["15", 15], ["15.3", 15.3],
-            //         ["10.2", 10.2], ["", 1.8],  ["", 1.8],  ["", 4.4], ["", 3.4]],
-            //     size: '0',
-            //     innerSize: '60%',
-            //     dataLabels: {
-            //         formatter: function() {
-            //             return this.point.name
-            //         },
-            //         color: 'white',
-            //         distance: 95
-            //     },
-            //     animation: {
-            //         duration: 1500
-            //     },
-            //     states: {
-            //         hover: {
-            //             halo: {
-            //                 size: 0
-            //             },
-            //         }
-            //     }
-            // }
+            }
         ]
     });
 
     $('.donut-summary').addClass('active');
+
+    var isStrated = true;
+
+    if (isStrated) {
+        setTimeout(function () {
+            donutChart.series[0].points[0].oldColor = donutChart.series[0].points[0].color;
+            donutChart.series[0].points[0].slice(true);
+            donutChart.series[0].points[0].graphic.attr("fill", "#FF3C54");
+            donutChart.series[0].points[0].dataLabel.css({
+                color: "#919BB0"
+            });
+            $('.donut-summary')[0].classList.add('hover');
+
+            $('.donut-summary').each(function (i, item) {
+                item.addEventListener('mouseout', function () {
+                    donutChart.series[0].points[0].slice(false);
+                    donutChart.series[0].points[0].graphic.attr("fill", donutChart.series[0].points[0].oldColor);
+                    donutChart.series[0].points[0].dataLabel.css({
+                        color: "transparent"
+                    });
+                    $('.donut-summary')[0].classList.remove('hover');
+                });
+
+                isStrated = false;
+            });
+
+            $('#donut .highcharts-point').each(function (i, item) {
+                item.addEventListener('mouseout', function () {
+                    donutChart.series[0].points[0].slice(false);
+                    donutChart.series[0].points[0].graphic.attr("fill", donutChart.series[0].points[0].oldColor);
+                    donutChart.series[0].points[0].dataLabel.css({
+                        color: "transparent"
+                    });
+                    $('.donut-summary')[0].classList.remove('hover');
+                });
+
+                isStrated = false;
+            });
+        }, 1500);
+    }
+
+    $('.donut-summary').each(function (i, item) {
+       item.addEventListener('mouseover', function () {
+           donutChart.series[0].points[i].oldColor = donutChart.series[0].points[i].color;
+           donutChart.series[0].points[i].slice(true);
+           donutChart.series[0].points[i].graphic.attr("fill", "#FF3C54");
+           donutChart.series[0].points[i].dataLabel.css({
+               color: "#919BB0"
+           });
+       });
+    });
+
+    $('.donut-summary').each(function (i, item) {
+        item.addEventListener('mouseout', function () {
+            donutChart.series[0].points[i].slice(false);
+            donutChart.series[0].points[i].graphic.attr("fill", donutChart.series[0].points[i].oldColor);
+            donutChart.series[0].points[i].dataLabel.css({
+                color: "transparent"
+            });
+        });
+    });
+
+
+
+    // console.log($('#donut .highcharts-point')[0]);
 });
 
 

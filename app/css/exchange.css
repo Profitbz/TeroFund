@@ -67,6 +67,8 @@
             transform: translate(1%, -10%); }
     .exchange-form__free-value {
       text-decoration: underline; }
+      .exchange-form__free-value:hover {
+        color: #304FFE; }
 
 .exchange-input {
   max-width: 86%;

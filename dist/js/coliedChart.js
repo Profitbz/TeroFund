@@ -90,7 +90,8 @@ $(document).ready(function () {
                         fontWeight: "normal"
                     },
                     allowOverlap: true,
-                    crop: false
+                    crop: false,
+                    padding: 15
                 },
                 point: {
                     events: {

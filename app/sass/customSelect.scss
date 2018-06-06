@@ -65,13 +65,12 @@ select {
     pointer-events: none;
     position: absolute;
     right: 20px;
-    top: 29%;
+    top: 32.5%;
+    transform: translate3d(0, 0, 0);
   }
   &.open {
     @extend :active;
-    &:after {
-      transform: rotate(-180deg);
-    }
+
     .list {
       transform: scale(1);
       opacity: 1;
@@ -130,5 +129,11 @@ select {
     }
   }
 }
+
+.dropdown.open {
+  border-color: $mainBlue;
+}
+
+
 
 

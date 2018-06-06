@@ -135,7 +135,8 @@
                 border-radius: 4px;
         width: 65px;
         line-height: 32px;
-        font-size: 12px; }
+        font-size: 12px;
+        font-family: sans-serif; }
   .can-toggle.can-toggle--size-small input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
     -webkit-transform: translate3d(44px, 0, 0);
             transform: translate3d(44px, 0, 0); }
@@ -162,7 +163,8 @@
                 border-radius: 2px;
         width: 44px;
         line-height: 26px;
-        font-size: 10px; }
+        font-size: 10px;
+        font-family: sans-serif; }
   .can-toggle.can-toggle--size-large input[type="checkbox"]:checked ~ label .can-toggle__switch:after {
     -webkit-transform: translate3d(78px, 0, 0);
             transform: translate3d(78px, 0, 0); }
@@ -189,7 +191,8 @@
                 border-radius: 4px;
         width: 78px;
         line-height: 46px;
-        font-size: 14px; }
+        font-size: 14px;
+        font-family: sans-serif; }
   .can-toggle.demo-rebrand-1 input[type="checkbox"][disabled] ~ label {
     color: rgba(181, 62, 116, 0.5); }
   .can-toggle.demo-rebrand-1 input[type="checkbox"]:focus ~ label .can-toggle__switch, .can-toggle.demo-rebrand-1 input[type="checkbox"]:hover ~ label .can-toggle__switch {
@@ -290,4 +293,5 @@
                 border-radius: 10px;
         width: 20px;
         line-height: 20px;
-        font-size: 6px; }
+        font-size: 6px;
+        font-family: sans-serif; }

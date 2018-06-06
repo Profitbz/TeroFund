@@ -56,11 +56,9 @@ select {
     pointer-events: none;
     position: absolute;
     right: 20px;
-    top: 29%; }
-  .dropdown.open:after {
-    -webkit-transform: rotate(-180deg);
-        -ms-transform: rotate(-180deg);
-            transform: rotate(-180deg); }
+    top: 32.5%;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
   .dropdown.open .list {
     -webkit-transform: scale(1);
         -ms-transform: scale(1);
@@ -121,3 +119,6 @@ select {
       background: #e6e6e6; }
     .dropdown .option.selected:focus {
       background: #fafafa; }
+
+.dropdown.open {
+  border-color: #304FFE; }

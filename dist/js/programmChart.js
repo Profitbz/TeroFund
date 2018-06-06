@@ -91,7 +91,7 @@ $(document).ready(function () {
         },
         series: [{
             name: ' ',
-            data: [4, 7, 3, 8, 3, 7, 3, 4, 5 ]
+            data: [4, 7, 3, 8, 3, 7, 3, 6, 8 ]
         }]
     });
 

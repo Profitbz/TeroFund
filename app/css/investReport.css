@@ -210,6 +210,16 @@
     -o-transition: color 0.3s;
     transition: color 0.3s;
     color: #5c677f; }
+  .donut-summary.hover .donut-summary__btn {
+    -webkit-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    background: #FF3C54; }
+  .donut-summary.hover .donut-summary__name {
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s;
+    color: #5c677f; }
   .donut-summary__btn {
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;

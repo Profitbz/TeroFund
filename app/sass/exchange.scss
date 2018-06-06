@@ -75,6 +75,10 @@
 
       &-value {
         text-decoration: underline;
+
+        &:hover {
+          color: $mainBlue;
+        }
       }
     }
   }

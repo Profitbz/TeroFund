@@ -116,6 +116,7 @@
         width: $can-toggle-switch-width - $can-toggle-offset;
         line-height: $can-toggle-height - ($can-toggle-offset*2);
         font-size: $can-toggle-switch-font-size;
+        font-family: sans-serif;
       }
 
       &:hover {

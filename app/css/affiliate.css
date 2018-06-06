@@ -60,15 +60,15 @@
   font-weight: normal;
   width: 75%; }
   .affiliate-search__input::-webkit-input-placeholder {
-    color: #919BB0; }
+    color: #C8CDD7; }
   .affiliate-search__input::-moz-placeholder {
-    color: #919BB0; }
+    color: #C8CDD7; }
   .affiliate-search__input:-ms-input-placeholder {
-    color: #919BB0; }
+    color: #C8CDD7; }
   .affiliate-search__input::-ms-input-placeholder {
-    color: #919BB0; }
+    color: #C8CDD7; }
   .affiliate-search__input::placeholder {
-    color: #919BB0; }
+    color: #C8CDD7; }
 
 .affiliate-list {
   padding-top: 2.4rem; }
@@ -113,6 +113,8 @@
         -ms-flex-pack: center;
             justify-content: center;
     opacity: 0.4; }
+    .affiliate-list__item:hover {
+      opacity: 1; }
     .affiliate-list__item.active {
       opacity: 1; }
   .affiliate-list__icon {
@@ -156,6 +158,22 @@
       color: #304FFE; }
   .affiliate-table__icon {
     width: 9.2%; }
+    .affiliate-table__icon > svg {
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s;
+      cursor: pointer; }
+    .affiliate-table__icon > svg.rotate {
+      -webkit-transition: -webkit-transform 0.3s;
+      transition: -webkit-transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s;
+      transition: transform 0.3s, -webkit-transform 0.3s;
+      -webkit-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg); }
   .affiliate-table__level {
     width: 6.3%; }
   .affiliate-table__user {
@@ -180,6 +198,13 @@
             border-radius: 50%;
     font-size: 10px;
     letter-spacing: 1px; }
+    .affiliate-table__logo > span {
+      display: block;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translate(3%, 13%);
+          -ms-transform: translate(3%, 13%);
+              transform: translate(3%, 13%); }
     .affiliate-table__logo_blue {
       background: #304FFE; }
     .affiliate-table__logo_black {

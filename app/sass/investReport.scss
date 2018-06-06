@@ -264,6 +264,19 @@
 
   }
 
+  &.hover {
+    .donut-summary__btn {
+      transition: background-color 0.3s;
+      background: $mainRed;
+    }
+
+    .donut-summary__name {
+      transition: color 0.3s;
+      color: darken($mainAshes, 20%);
+    }
+
+  }
+
   &__btn {
     transition: background-color 0.3s;
     width: 60px;
