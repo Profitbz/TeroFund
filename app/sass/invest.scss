@@ -19,6 +19,7 @@
     transform: translateY(20%);
     margin-right: 6%;
 
+
     &::before {
       position: absolute;
       bottom: 0;
@@ -34,6 +35,7 @@
       width: 100%;
       text-align: center;
       padding-bottom: 0.7rem;
+      background-color: transparent;
     }
   }
 

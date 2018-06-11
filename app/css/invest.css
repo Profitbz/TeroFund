@@ -34,7 +34,8 @@
     .invest-input__item {
       width: 100%;
       text-align: center;
-      padding-bottom: 0.7rem; }
+      padding-bottom: 0.7rem;
+      background-color: transparent; }
   .invest__variable {
     margin-right: 6.5%; }
   .invest-info {

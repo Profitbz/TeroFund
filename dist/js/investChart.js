@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var isOpened = false;
+    var isOpened = true;
 
     var lineChart1 = Highcharts.chart('investReportChart1', {
         chart: {

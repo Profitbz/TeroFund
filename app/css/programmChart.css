@@ -6,8 +6,7 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 2.3rem 2.1rem 0 2rem;
-  color: #455074; }
+  padding: 2.3rem 2.1rem 0 2rem; }
   .programm-head__origin {
     margin-right: 6.2rem;
     -webkit-box-flex: 1;
@@ -55,7 +54,7 @@
     min-width: 1200px;
     margin: 0 auto; }
     .programm-chart__container.opened {
-      min-width: 1400px; }
+      min-width: 1450px; }
 
 /* Define the stop colors */
 #gradient-0 stop {

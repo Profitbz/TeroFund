@@ -10,7 +10,6 @@
 
       display: flex;
       padding: 2.3rem 2.1rem 0 2rem;
-      color: $mainBlack;
 
         &__origin {
           margin-right: 6.2rem;
@@ -76,7 +75,7 @@
       margin: 0 auto;
 
       &.opened {
-        min-width: 1400px;
+        min-width: 1450px;
       }
     }
   }

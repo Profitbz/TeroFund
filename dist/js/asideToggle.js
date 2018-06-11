@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var isOpened = false;
+    var isOpened = true;
 
     function openPage() {
         $('.page-aside').toggleClass('hidden');

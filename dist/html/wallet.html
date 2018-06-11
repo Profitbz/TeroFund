@@ -9,8 +9,109 @@
     <title>Terofund</title>
 </head>
 <body>
+<div class="cd-popup js-modal-convert" role="alert">
+    <div class="cd-popup-container">
+        <p class="modal-title">Convert USDH to SSC</p>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_modal">
+                <input type="text" class="form__input" placeholder="0.00">
+                <span class="form__title">Amount</span>
+                <span class="form__warn">Correct your info after the enter!</span>
+                <span class="form-input__currency">USDH</span>
+                <p class="modal-form__limit">Weekly Convert Limit</p>
+                <div class="modal-form__value">1000 USD</div>
+            </div>
+            <span class="modal__symbol">~</span>
+            <div class="form__container form__container_modal">
+                <input type="text" class="form__input" placeholder="0.00">
+                <span class="form__title">Amount</span>
+                <span class="form__warn">Correct your info after the enter!</span>
+                <span class="form-input__currency">SSC</span>
+                <p class="modal-form__limit">Total Income Limit</p>
+                <div class="modal-form__value">20 000 USD</div>
+            </div>
+        </div>
+        <p class="modal-error">* Error message</p>
+        <button class="modal-btn main-btn">Convert</button>
+        <a href="#0" class="cd-popup-close img-replace">
+        </a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+<div class="cd-popup js-modal-reinvest" role="alert">
+    <div class="cd-popup-container">
+        <p class="modal-title">Tero Program</p>
+        <p class="modal-form__balance">Available <span class="modal-form__value">Balance 1000 USD</span></p>
+        <p class="modal-form__balance">Frozen <span class="modal-form__value">Balance 20 USD</span></p>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_lg form__container_reinvest">
+                <input type="text" class="form__input" placeholder="0.00">
+                <span class="form__title">Amount</span>
+                <span class="form__warn active">error message</span>
+            </div>
+        </div>
+        <button class="modal-btn modal-btn_reinvest main-btn">Convert</button>
+        <a href="#0" class="cd-popup-close img-replace">
+        </a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+<div class="cd-popup js-modal-deposit" role="alert">
+    <div class="cd-popup-container cd-popup-container_without-btn">
+        <p class="modal-title">Deposit</p>
+        <div class="modal-qr">
+            <img src="../img/qr-code.png" alt="qr-code">
+        </div>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_lg form__container_deposit">
+                <input type="text" class="form__input" placeholder="Your information.">
+                <span class="form__title">Wallet</span>
+                <span class="form__warn">error message</span>
+                <span class="form-input__currency">COPY</span>
+            </div>
+        </div>
+        <a href="#0" class="cd-popup-close img-replace">
+        </a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
+<div class="cd-popup js-modal-withdraw" role="alert">
+    <div class="cd-popup-container">
+        <p class="modal-title">Withdraw</p>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_lg">
+                <input type="text" class="form__input" placeholder="Your information.">
+                <span class="form__title">BTC address</span>
+                <span class="form__warn">error message</span>
+            </div>
+        </div>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_modal">
+                <input type="text" class="form__input" placeholder="0.00">
+                <span class="form__title">Amount</span>
+                <span class="form__warn">Correct your info after the enter!</span>
+                <span class="form-input__currency">BTC</span>
+            </div>
+            <span class="modal__symbol">~</span>
+            <div class="form__container form__container_modal">
+                <input type="text" class="form__input" placeholder="0.00">
+                <span class="form__title">Amount</span>
+                <span class="form__warn">Correct your info after the enter!</span>
+                <span class="form-input__currency">USD</span>
+            </div>
+        </div>
+        <div class="form__modal-wrapper">
+            <div class="form__container form__container_lg">
+                <input type="text" class="form__input" placeholder="Your information.">
+                <span class="form__title">Amount on USD</span>
+                <span class="form__tip active">Tx Fee 0.0004 BTC</span>
+                <span class="form__warn">error message</span>
+            </div>
+        </div>
+        <button class="modal-btn modal-btn_withdraw main-btn">Withdraw</button>
+        <a href="#0" class="cd-popup-close img-replace">
+        </a>
+    </div> <!-- cd-popup-container -->
+</div> <!-- cd-popup -->
 <div class="page-wrapper">
-    <aside class="page-aside">
+    <aside class="page-aside hidden">
         <a href="#" class="main-logo">
             <img src="../img/logo/black.png" alt="Terrofund logo">
         </a>
@@ -227,20 +328,20 @@
             </ul>
         </nav>
         <div class="page-color-changer color-changer">
-            <div class="color-changer__item">
+            <div class="color-changer__item js-color-white js-color-change" data-color="white">
                 <div class="color-changer__icon"></div>
-                <span class="color-changer__text">Light</span>
+                <span class="color-changer__text " >Light</span>
             </div>
-            <div class="color-changer__item">
+            <div class="color-changer__item js-color-dark js-color-change" data-color="dark">
                 <div class="color-changer__icon" style="display: none"></div>
-                <span class="color-changer__text color-changer__text_inactive">Black</span>
+                <span class="color-changer__text  color-changer__text_inactive">Black</span>
             </div>
         </div>
     </aside>
     <div class="page-content">
         <header class="page-header">
             <div class="header-bar">
-                <a href="#" class="main-logo main-logo_header">
+                <a href="#" class="main-logo main-logo_header visible">
                     <img src="../img/logo/black.png" alt="Terrofund logo">
                 </a>
                 <div class="aside-btn">
@@ -257,17 +358,143 @@
                 </div>
                 <div class="page-user user">
                     <div class="user-notify">
-
-                        <svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <defs></defs>
-                            <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Tero-programm-white" transform="translate(-1079.000000, -40.000000)" fill="#455074">
-                                    <g id="Group-2" transform="translate(1079.000000, 29.000000)">
-                                        <path d="M16.3650817,25.6951379 L15.3774311,24.6844394 C15.2881856,24.593981 15.300085,24.175611 15.300085,24.0468818 L15.300085,19.6979212 C15.300085,16.7536749 13.3315834,14.1703923 10.6185191,13.2449335 L10.6185191,13.1640428 C10.6185191,11.9933026 9.65041748,11 8.50042498,11 C7.35383231,11 6.38148093,11.9933026 6.38148093,13.1640428 L6.38148093,13.2449335 C3.66841658,14.1703923 1.70076496,16.7536749 1.70076496,19.6979212 L1.70076496,24.0468818 C1.70076496,24.175611 1.71181441,24.593981 1.62341883,24.6844394 L0.635768212,25.6951379 C0.329783511,26.008263 0,26.5892842 0,27.1268157 C0,27.8052535 0.600919954,28.3575715 1.33953302,28.3575715 L5.05894705,28.3575715 C5.40827959,29.87014 6.74271286,31 8.33043348,31 C9.91815409,31 11.5500725,29.9084109 11.900255,28.3958424 L15.6613169,28.3575715 C16.39993,28.3575715 17,27.8052535 17,27.1268157 C17,26.5910237 16.6710664,26.0091328 16.3650817,25.6951379 L16.3650817,25.6951379 Z M8.33043348,29.4709055 C7.57822109,29.4709055 6.92885356,29.0133948 6.63476826,28.3575715 L10.0252487,28.3575715 C9.73116344,29.0133948 9.08179591,29.4709055 8.33043348,29.4709055 L8.33043348,29.4709055 Z M5.95055247,26.6562582 C5.83325834,26.6266852 1.70076496,26.6562582 1.70076496,26.6562582 C1.73816309,26.5066539 2.68416579,25.7638514 2.68416579,25.7638514 C3.05219739,25.3881012 3.40067997,24.5791946 3.40067997,24.0468818 L3.40067997,19.6979212 C3.40067997,17.2207532 4.92125394,15.1471688 7.30538473,14.5635383 C7.6419679,14.4809081 7.87910604,14.1738714 7.87910604,13.8198661 L7.87910604,13.1640428 C7.87910604,12.8456989 8.18849058,12.7395842 8.50042498,12.7395842 C8.82085896,12.7395842 9.120044,12.8396103 9.120044,13.1640428 L9.120044,13.8198661 C9.120044,14.1738714 9.3580321,14.4809081 9.69461527,14.5635383 C12.0787461,15.1471688 13.60017,17.2207532 13.60017,19.6979212 L13.60017,24.0468818 C13.60017,24.5791946 13.9486526,25.3881012 14.3166842,25.7647212 L15.3034848,26.7736801 C15.319634,26.7902061 15.2847858,26.6362529 15.300085,26.6562582 L11.0502975,26.6562582 C10.9330033,26.6266852 5.95055247,26.6562582 5.95055247,26.6562582 Z" id="notification-icon"></path>
+                        <div class="user-notify__btn js-notify-btn">
+                            <svg width="17px" height="20px" viewBox="0 0 17 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <defs></defs>
+                                <g id="Fund345" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Tero-programm-white345" transform="translate(-1079.000000, -40.000000)" fill="#455074">
+                                        <g id="Group-2345" transform="translate(1079.000000, 29.000000)">
+                                            <path d="M16.3650817,25.6951379 L15.3774311,24.6844394 C15.2881856,24.593981 15.300085,24.175611 15.300085,24.0468818 L15.300085,19.6979212 C15.300085,16.7536749 13.3315834,14.1703923 10.6185191,13.2449335 L10.6185191,13.1640428 C10.6185191,11.9933026 9.65041748,11 8.50042498,11 C7.35383231,11 6.38148093,11.9933026 6.38148093,13.1640428 L6.38148093,13.2449335 C3.66841658,14.1703923 1.70076496,16.7536749 1.70076496,19.6979212 L1.70076496,24.0468818 C1.70076496,24.175611 1.71181441,24.593981 1.62341883,24.6844394 L0.635768212,25.6951379 C0.329783511,26.008263 0,26.5892842 0,27.1268157 C0,27.8052535 0.600919954,28.3575715 1.33953302,28.3575715 L5.05894705,28.3575715 C5.40827959,29.87014 6.74271286,31 8.33043348,31 C9.91815409,31 11.5500725,29.9084109 11.900255,28.3958424 L15.6613169,28.3575715 C16.39993,28.3575715 17,27.8052535 17,27.1268157 C17,26.5910237 16.6710664,26.0091328 16.3650817,25.6951379 L16.3650817,25.6951379 Z M8.33043348,29.4709055 C7.57822109,29.4709055 6.92885356,29.0133948 6.63476826,28.3575715 L10.0252487,28.3575715 C9.73116344,29.0133948 9.08179591,29.4709055 8.33043348,29.4709055 L8.33043348,29.4709055 Z M5.95055247,26.6562582 C5.83325834,26.6266852 1.70076496,26.6562582 1.70076496,26.6562582 C1.73816309,26.5066539 2.68416579,25.7638514 2.68416579,25.7638514 C3.05219739,25.3881012 3.40067997,24.5791946 3.40067997,24.0468818 L3.40067997,19.6979212 C3.40067997,17.2207532 4.92125394,15.1471688 7.30538473,14.5635383 C7.6419679,14.4809081 7.87910604,14.1738714 7.87910604,13.8198661 L7.87910604,13.1640428 C7.87910604,12.8456989 8.18849058,12.7395842 8.50042498,12.7395842 C8.82085896,12.7395842 9.120044,12.8396103 9.120044,13.1640428 L9.120044,13.8198661 C9.120044,14.1738714 9.3580321,14.4809081 9.69461527,14.5635383 C12.0787461,15.1471688 13.60017,17.2207532 13.60017,19.6979212 L13.60017,24.0468818 C13.60017,24.5791946 13.9486526,25.3881012 14.3166842,25.7647212 L15.3034848,26.7736801 C15.319634,26.7902061 15.2847858,26.6362529 15.300085,26.6562582 L11.0502975,26.6562582 C10.9330033,26.6266852 5.95055247,26.6562582 5.95055247,26.6562582 Z" id="notification-icon345"></path>
+                                        </g>
                                     </g>
                                 </g>
+                            </svg>
+                            <div class="user-notify__new"></div>
+                        </div>
+                        <div class="user-notify-list js-notify-list" style="display: none">
+                            <div class="user-notify-list__title">Notice</div>
+                            <div class="user-notify-list__item">
+								<span class="user-notify-list__icon">
+									<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M10,19.1666667 C4.93738979,19.1666667 0.833333333,15.0626102 0.833333333,10 C0.833333333,4.93738979 4.93738979,0.833333333 10,0.833333333 C15.0626102,0.833333333 19.1666667,4.93738979 19.1666667,10 C19.1666667,15.0626102 15.0626102,19.1666667 10,19.1666667 Z M10,17.5 C14.1421356,17.5 17.5,14.1421356 17.5,10 C17.5,5.85786438 14.1421356,2.5 10,2.5 C5.85786438,2.5 2.5,5.85786438 2.5,10 C2.5,14.1421356 5.85786438,17.5 10,17.5 Z M9.16666667,6.66666667 C9.16666667,6.20642938 9.53976271,5.83333333 10,5.83333333 C10.4602373,5.83333333 10.8333333,6.20642938 10.8333333,6.66666667 L10.8333333,10 C10.8333333,10.4602373 10.4602373,10.8333333 10,10.8333333 C9.53976271,10.8333333 9.16666667,10.4602373 9.16666667,10 L9.16666667,6.66666667 Z M9.41074435,13.0892557 C9.08530744,12.7638187 9.08530744,12.2361813 9.41074435,11.9107443 C9.73618126,11.5853074 10.2638187,11.5853074 10.5892557,11.9107443 C10.9146926,12.2361813 10.9146926,12.7638187 10.5892557,13.0892557 C10.2638187,13.4146926 9.73618126,13.4146926 9.41074435,13.0892557 Z" id="path-1345"></path>
+    </defs>
+    <g id="Fund345" class="icon-color" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Invest-Report-Portfolio-white-new345" transform="translate(-973.000000, -144.000000)">
+            <g  id="Group345" transform="translate(949.000000, 67.000000)">
+                <g id="Notification345">
+                    <g id="alert-circle345" transform="translate(24.000000, 77.000000)">
+                        <mask id="mask-2345" fill="white">
+                            <use xlink:href="#path-1345"></use>
+                        </mask>
+                        <use id="Combined-Shape345" fill="#000000" fill-rule="nonzero" xlink:href="#path-1345"></use>
+                        <g  id="Blue-Light345" mask="url(#mask-2345)"  fill-rule="evenodd">
+                            <path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z" id="Black-Blue345"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+								</svg>
+								</span>
+                                <span class="user-notify-list__text">System message!</span>
+                            </div>
+                            <div class="user-notify-list__item">
+								<span class="user-notify-list__icon">
+									<svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M19.1668092,4.99829112 C19.1668097,4.99870678 19.1668099,4.99912244 19.1668097,4.99953809 C19.1668098,4.99969205 19.1668098,4.99984603 19.1668098,5 L19.1668098,15 C19.1668098,16.376904 18.043705,17.5 16.6667903,17.5 L3.33335285,17.5 C1.95643814,17.5 0.833333333,16.376904 0.833333333,15 L0.833333333,5 C0.833333333,4.99984603 0.833333347,4.99969205 0.833333375,4.99953809 C0.833333243,4.99912244 0.833333422,4.99870678 0.83333391,4.99829112 C0.834262789,3.62216683 1.95700787,2.5 3.33335285,2.5 L16.6667903,2.5 C18.0431352,2.5 19.1658803,3.62216683 19.1668092,4.99829097 Z M17.4112571,4.6282905 C17.2734403,4.35576935 16.9900392,4.16666667 16.6667382,4.16666667 L3.33340489,4.16666667 C3.01010386,4.16666667 2.72670284,4.35576935 2.58888603,4.6282905 L10.0000716,9.81612037 L17.4112571,4.6282905 Z M17.5000716,6.6005463 L10.4779568,11.5160266 C10.1910234,11.71688 9.80911972,11.71688 9.52218626,11.5160266 L2.50007155,6.6005463 L2.50007155,15 C2.50007155,15.4564294 2.87697551,15.8333333 3.33340489,15.8333333 L16.6667382,15.8333333 C17.1231676,15.8333333 17.5000716,15.4564294 17.5000716,15 L17.5000716,6.6005463 Z" id="path-1871"></path>
+    </defs>
+    <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="icon-color" id="Invest-Report-Portfolio-white-new" transform="translate(-973.000000, -209.000000)">
+            <g id="Group" transform="translate(949.000000, 67.000000)">
+                <g id="Notification">
+                    <g id="mail" transform="translate(24.000000, 140.000000)">
+                        <mask id="mask-2871" fill="white">
+                            <use xlink:href="#path-1871"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1871"></use>
+                        <g id="Blue" mask="url(#mask-2871)" fill-rule="evenodd">
+                            <path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z" id="Black-Blue"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+								</span>
+                                <span class="user-notify-list__text">New message!</span>
+                            </div>
+                            <div class="user-notify-list__item">
+								<span class="user-notify-list__icon">
+									<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.40936871,2.58665469 C7.81940565,1.91065349 8.54879733,1.5 9.33526928,1.5 C10.1217412,1.5 10.8511329,1.91065349 11.2611698,2.58665469 L17.6197622,13.2020127 C18.0195403,13.8943373 18.0219273,14.746803 17.6260323,15.4413554 C17.2301374,16.1359079 16.4954237,16.5682262 15.6877693,16.577058 L2.97452638,16.5770127 C2.1751149,16.5682262 1.44040113,16.1359079 1.04450622,15.4413554 C0.648611309,14.746803 0.650998215,13.8943373 1.05686871,13.1916547 L7.40936871,2.58665469 Z M2.34976218,13.9521033 C2.21650279,14.1828782 2.21570715,14.4670334 2.34767212,14.6985509 C2.47963709,14.9300684 2.72454169,15.0741745 2.98276928,15.077058 L15.6795264,15.0771033 C15.9459969,15.0741745 16.1909015,14.9300684 16.3228664,14.6985509 C16.4548314,14.4670334 16.4540358,14.1828782 16.3268687,13.9624613 L9.97651928,3.361029 C9.84055716,3.1368845 9.5974266,3 9.33526928,3 C9.07368676,3 8.83104766,3.1362849 8.69491514,3.3595559 L2.34976218,13.9521033 Z M8.58526928,6.827058 C8.58526928,6.41284444 8.92105572,6.077058 9.33526928,6.077058 C9.74948284,6.077058 10.0852693,6.41284444 10.0852693,6.827058 L10.0852693,9.827058 C10.0852693,10.2412716 9.74948284,10.577058 9.33526928,10.577058 C8.92105572,10.577058 8.58526928,10.2412716 8.58526928,9.827058 L8.58526928,6.827058 Z M8.8049392,12.6073881 C8.51204598,12.3144949 8.51204598,11.8396211 8.8049392,11.5467279 C9.09783241,11.2538347 9.57270615,11.2538347 9.86559937,11.5467279 C10.1584926,11.8396211 10.1584926,12.3144949 9.86559937,12.6073881 C9.57270615,12.9002813 9.09783241,12.9002813 8.8049392,12.6073881 Z" id="path-1220"></path>
+    </defs>
+    <g class="icon-color" id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Invest-Report-Portfolio-white-new" transform="translate(-976.000000, -272.000000)">
+            <g id="Group" transform="translate(949.000000, 67.000000)">
+                <g id="Notification">
+                    <g id="alert-triangle" transform="translate(27.000000, 204.000000)">
+                        <mask id="mask-2220" fill="white">
+                            <use xlink:href="#path-1220"></use>
+                        </mask>
+                        <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1220"></use>
+                        <g id="Blue-Light" mask="url(#mask-2220)"  fill-rule="evenodd">
+                            <path d="M0,0 L18,0 L18,18 L0,18 L0,0 Z" id="Black-Blue"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+								</span>
+                                <span class="user-notify-list__text">Training!</span>
+                            </div>
+                            <div class="user-notify-list__item">
+								<span class="user-notify-list__icon">
+
+								<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.16666667,18.3333333 C4.10405646,18.3333333 0,14.2292769 0,9.16666667 C0,4.10405646 4.10405646,0 9.16666667,0 C14.2292769,0 18.3333333,4.10405646 18.3333333,9.16666667 C18.3333333,14.2292769 14.2292769,18.3333333 9.16666667,18.3333333 Z M9.16666667,16.6666667 C13.3088023,16.6666667 16.6666667,13.3088023 16.6666667,9.16666667 C16.6666667,5.02453104 13.3088023,1.66666667 9.16666667,1.66666667 C5.02453104,1.66666667 1.66666667,5.02453104 1.66666667,9.16666667 C1.66666667,13.3088023 5.02453104,16.6666667 9.16666667,16.6666667 Z M10,4.16666667 L10,8.8214887 L12.2559223,11.077411 C12.5813592,11.4028479 12.5813592,11.9304854 12.2559223,12.2559223 C11.9304854,12.5813592 11.4028479,12.5813592 11.077411,12.2559223 L8.57741102,9.75592232 C8.4211307,9.599642 8.33333333,9.38768041 8.33333333,9.16666667 L8.33333333,4.16666667 C8.33333333,3.70642938 8.70642938,3.33333333 9.16666667,3.33333333 C9.62690396,3.33333333 10,3.70642938 10,4.16666667 Z" id="path-1322"></path>
+    </defs>
+    <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g class="icon-color" id="Invest-Report-Portfolio-white-new" transform="translate(-976.000000, -333.000000)">
+            <g id="Group" transform="translate(949.000000, 67.000000)">
+                <g id="Notification">
+                    <g id="clock" transform="translate(27.000000, 266.000000)">
+                        <g id="Group" transform="translate(0.833333, 0.833333)">
+                            <mask id="mask-2322" fill="white">
+                                <use xlink:href="#path-1322"></use>
+                            </mask>
+                            <g id="Combined-Shape" fill-rule="nonzero"></g>
+                            <g id="Blue-Light" mask="url(#mask-2322)" >
+                                <g transform="translate(-0.833333, -0.833333)" id="Black-Blue">
+                                    <path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z"></path>
+                                </g>
                             </g>
-                        </svg>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+								</span>
+                                <span class="user-notify-list__text">Reminder!</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="user-name">John Dou</div>
                     <div class="user-img"><span class="user-img__text">JD</span></div>
@@ -406,8 +633,8 @@
                 </div>
             </div>
         </header>
-        <main class="page-main">
-            <div class="wallet main-container main-container_styless">
+        <main class="page-main opened">
+            <div class="wallet main-container main-container_styless  opened ">
                 <div class="wallet__item">
                     <div class="wallet__data">
                         <div class="wallet__title-container">
@@ -511,8 +738,8 @@
                     </div>
 
                     <div class="wallet-btns">
-                        <a href="#" class="wallet-btns__link">Deposit</a>
-                        <a href="#" class="wallet-btns__link">Withdraw</a>
+                        <a href="#" class="wallet-btns__link js-deposit-modal">Deposit</a>
+                        <a href="#" class="wallet-btns__link js-withdraw-modal">Withdraw</a>
                     </div>
                 </div>
                 <div class="wallet__item">
@@ -618,8 +845,8 @@
                     </div>
 
                     <div class="wallet-btns">
-                        <a href="#" class="wallet-btns__link">Deposit</a>
-                        <a href="#" class="wallet-btns__link">Withdraw</a>
+                        <a href="#" class="wallet-btns__link js-deposit-modal">Deposit</a>
+                        <a href="#" class="wallet-btns__link js-withdraw-modal">Withdraw</a>
                     </div>
                 </div>
                 <div class="wallet__item">
@@ -725,8 +952,8 @@
                     </div>
 
                     <div class="wallet-btns">
-                        <a href="#" class="wallet-btns__link">Deposit</a>
-                        <a href="#" class="wallet-btns__link">Withdraw</a>
+                        <a class="wallet-btns__link js-reinvest-modal">Reinvest USDH</a>
+                        <a class="wallet-btns__link js-convert-modal">Convert to SSC</a>
                     </div>
                 </div>
             </div>
@@ -737,7 +964,7 @@
                     <li class="transaction-links__item"><a href="walletbtc.html#transaction">BTC Wallet</a></li>
                     <li class="transaction-links__item"><a href="walletusdh.html#transaction">USDH Wallet</a></li>
                 </ul>
-                <div class="transaction-form main-container">
+                <div class="transaction-form main-container space-between opened">
                     <select name="date" class="transaction-form__date">
                         <option value="25">25</option>
                         <option value="26">26</option>
@@ -786,7 +1013,7 @@
                             <img src="../img/select-icon.svg" alt="">
                         </div>
                     </div>
-                    <div class="transaction-table__row transaction-table__row_mb transaction-table__row_body main-container">
+                    <div class="transaction-table__row transaction-table__row_mb transaction-table__row_body main-container opened">
                         <div class="transaction-table__item transaction-table__plus">
                             <svg width="14px" height="22px" viewBox="0 0 11 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -852,6 +1079,8 @@
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/changeColor.js"></script>
 <script type="text/javascript" src="../js/asideToggle.js"></script>
+<script type="text/javascript" src="../js/notifyList.js"></script>
+<script type="text/javascript" src="../js/modal.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>

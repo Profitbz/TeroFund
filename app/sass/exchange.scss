@@ -65,6 +65,14 @@
 
       &_sell {
         background: $mainRed;
+
+        &:hover {
+          background: #FF6376;
+        }
+
+        &:active {
+          background: #C43A4B;
+        }
       }
     }
 

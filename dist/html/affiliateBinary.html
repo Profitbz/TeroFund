@@ -535,448 +535,36 @@
         <main class="page-main opened">
             <div class="affiliate">
                 <ul class="transaction-links affiliate__links">
-                    <li class="transaction-links__item active"><a>Unlevel</a></li>
-                    <li class="transaction-links__item"><a href="affiliateBinary.html">Binary</a></li>
+                    <li class="transaction-links__item "><a href="affiliate.html">Unlevel</a></li>
+                    <li class="transaction-links__item active"><a>Binary</a></li>
                 </ul>
-                <div class="affiliate-search main-container main-container_styless opened">
-                    <div class="affiliate-search__header">
-                        <h5 class="affiliate-search__title">Unilevel Network</h5>
-                        <span class="affiliate-search__sub">Group volume USD:
-                            <span class="affiliate-search__value">232 186.31</span>
-                        </span>
-                        <span class="affiliate-search__sub">Network member:
-                            <span class="affiliate-search__value">2 4616</span>
-                        </span>
-                    </div>
-                    <div class="affiliate-search__main main-container opened">
-                        <div class="affiliate-search__search-container">
-                            <svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <defs></defs>
-                                <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g id="Affiliate-white" transform="translate(-367.000000, -399.000000)" fill="#C4CCD8">
-                                        <g id="Unilevel-Network" transform="translate(337.000000, 310.000000)">
-                                            <g id="Search" transform="translate(0.000000, 48.000000)">
-                                                <path d="M47.6732099,58.1403928 L43.9630779,54.2485106 C45.0068029,52.8558915 45.6348409,51.1037893 45.6348409,49.1996368 C45.6348409,44.6784076 42.128045,41 37.8179213,41 C33.506796,41 30,44.6784076 30,49.1996368 C30,53.7198591 33.506796,57.3982667 37.8179213,57.3982667 C39.5067125,57.3982667 41.0682934,56.8263161 42.3484092,55.8676947 L46.0935991,59.7968342 C46.31196,60.025413 46.5974319,60.139199 46.8839053,60.139199 C47.1693772,60.139199 47.454849,60.025413 47.6732099,59.7968342 C48.10893,59.3396765 48.10893,58.5985574 47.6732099,58.1403928 L47.6732099,58.1403928 Z M32.2326901,49.1996368 C32.2326901,45.9703313 34.7388322,43.3431849 37.8179213,43.3431849 C40.8970103,43.3431849 43.4011491,45.9703313 43.4011491,49.1996368 C43.4011491,52.4289424 40.8970103,55.0550818 37.8179213,55.0550818 C34.7388322,55.0550818 32.2326901,52.4289424 32.2326901,49.1996368 L32.2326901,49.1996368 Z" id="search-icon"></path>
-                                            </g>
-                                        </g>
+                <div class="binary main-container main-container_styless opened">
+                    <div id="app">
+                        <div class="controls">
+                            <div>
+                                <label>Adjust width</label>
+                                <input type="range" v-model="settings.width" min="0" max="100" />
+                            </div>
+                            <div>
+                                <label>Stroke color</label>
+                                <input type="color" v-model="settings.strokeColor" />
+                            </div>
+                            <div>
+                                Selected: {{ selected }}
+                            </div>
+                        </div>
+                        <div class="svg-container" :style="{width: settings.width + '%'}">
+                            <svg id="svgId" viewBox="0 0 960 600" preserveAspectRatio="xMinYMin meet">
+                                <transition-group tag="g" name="line">
+                                    <path v-for="link in links" class="link" v-bind:key="link.id" v-bind:d="link.d" v-bind:style="link.style"></path>
+                                </transition-group>
+                                <transition-group tag="g" name="list">
+                                    <g class="node" v-on:click="select(index, node)"  v-for="(node, index) in nodes" v-bind:key="node.id" v-bind:style="node.style">
+                                        <circle v-bind:r="node.r" v-bind:style="{'fill': index == selected ? '#ff0000' : '#bfbfbf'}"></circle>
+                                        <text v-bind:dx="node.textpos.x" v-bind:dy="node.textpos.y" v-bind:style="node.textStyle">{{ node.text }}</text>
                                     </g>
-                                </g>
+                                </transition-group>
                             </svg>
-                            <input type="text" class="affiliate-search__input" placeholder="Enter email or username to filter you downlines">
-                        </div>
-                        <button class="main-btn">Search</button>
-                        <button class="main-btn">Reset</button>
-                    </div>
-                    <div class="affiliate-list">
-                        <h5 class="affiliate-search__title">Unilevel Network</h5>
-                        <ul class="affiliate-list__container main-container main-container_styless opened">
-                            <li class="affiliate-list__item active">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">01</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">02</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">03</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">04</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">05</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">06</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">07</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">08</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">09</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                            <li class="affiliate-list__item">
-                                <div class="affiliate-list__icon"></div>
-                                <span class="affiliate-list__value">10</span>
-                                <span class="affiliate-list__text">Level</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="affiliate-table main-container main-container_styless table opened">
-                        <div class="affiliate-table__row affiliate-table__row_header table-row table-row_header">
-                            <div class="table-item affiliate-table__icon">
-                            </div>
-                            <div class="table-item affiliate-table__level">
-                                Level
-                            </div>
-                            <div class="table-item affiliate-table__user">
-
-                            </div>
-                            <div class="table-item affiliate-table__username">
-                                Username
-                            </div>
-                            <div class="table-item affiliate-table__first">
-                                First name
-                            </div>
-                            <div class="table-item affiliate-table__last">
-                                Last name
-                            </div>
-                            <div class="table-item affiliate-table__email">
-                                Email
-                            </div>
-                            <div class="table-item affiliate-table__tero">
-                                Tero
-                            </div>
-                        </div>
-                        <div class="affiliate-table__row affiliate-table__row_blue affiliate-table__row_body table-row table-row_body active first js-network-1">
-                            <div class="table-item affiliate-table__icon">
-                                <svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                    <defs>
-                                        <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1500"></path>
-                                    </defs>
-                                    <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Affiliate-white" transform="translate(-369.000000, -684.000000)">
-                                            <g id="6" transform="translate(337.000000, 633.000000)">
-                                                <g id="Tabl-1">
-                                                    <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                        <g id="Detail-1">
-                                                            <g id="chevron-down" transform="translate(30.000000, 23.000000)">
-                                                                <mask id="mask-2500" fill="white">
-                                                                    <use xlink:href="#path-1500"></use>
-                                                                </mask>
-                                                                <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1500"></use>
-                                                                <g id="Blue-Classic" mask="url(#mask-2500)" fill="#304FFE" fill-rule="evenodd">
-                                                                    <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z"></path>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </svg>
-                            </div>
-                            <div class="table-item affiliate-table__level">
-                                1
-                            </div>
-                            <div class="table-item affiliate-table__user">
-                                <div class="affiliate-table__logo affiliate-table__logo_blue">
-                                    <span>CL</span>
-                                </div>
-                            </div>
-                            <div class="table-item affiliate-table__username">
-                                Crypto
-                            </div>
-                            <div class="table-item affiliate-table__first">
-                                Consulting
-                            </div>
-                            <div class="table-item affiliate-table__last">
-                                Lionking
-                            </div>
-                            <div class="table-item affiliate-table__email">
-                                crypto@gmail.com
-                            </div>
-                            <div class="table-item affiliate-table__tero">
-                                1256 USDH
-                            </div>
-                        </div>
-                        <div class="js-network-1-container">
-                            <div class="affiliate-table__row affiliate-table__row_body table-row table-row_body active">
-                                <div class="table-item affiliate-table__icon">
-                                    <svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                        <defs>
-                                            <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1502"></path>
-                                        </defs>
-                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Affiliate-white" transform="translate(-371.000000, -752.000000)">
-                                                <g id="6" transform="translate(337.000000, 633.000000)">
-                                                    <g id="Tabl-1">
-                                                        <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                            <g id="Detail-2502" transform="translate(0.000000, 70.000000)">
-                                                                <g id="chevron-down" transform="translate(37.000000, 30.000000) rotate(-90.000000) translate(-37.000000, -30.000000) translate(30.000000, 23.000000)">
-                                                                    <mask id="mask-2502" fill="white">
-                                                                        <use xlink:href="#path-1502"></use>
-                                                                    </mask>
-                                                                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1502"></use>
-                                                                    <g id="COLOR/-black-blue" mask="url(#mask-2502)" fill="#222238" fill-rule="evenodd">
-                                                                        <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z" id="Custom-color-1"></path>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="table-item affiliate-table__level">
-                                    2
-                                </div>
-                                <div class="table-item affiliate-table__user">
-                                    <div class="affiliate-table__logo affiliate-table__logo_black">
-                                        <span>BW</span>
-                                    </div>
-                                </div>
-                                <div class="table-item affiliate-table__username">
-                                    Batman
-                                </div>
-                                <div class="table-item affiliate-table__first">
-                                    Bruce
-                                </div>
-                                <div class="table-item affiliate-table__last">
-                                    Wayne
-                                </div>
-                                <div class="table-item affiliate-table__email">
-                                    wayne@gmail.com
-                                </div>
-                                <div class="table-item affiliate-table__tero">
-                                    9999 USDH
-                                </div>
-                            </div>
-                            <div class="affiliate-table__row affiliate-table__row_body table-row table-row_body active">
-                                <div class="table-item affiliate-table__icon">
-                                    <svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                        <defs>
-                                            <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1502"></path>
-                                        </defs>
-                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Affiliate-white" transform="translate(-371.000000, -752.000000)">
-                                                <g id="6" transform="translate(337.000000, 633.000000)">
-                                                    <g id="Tabl-1">
-                                                        <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                            <g id="Detail-2502" transform="translate(0.000000, 70.000000)">
-                                                                <g id="chevron-down" transform="translate(37.000000, 30.000000) rotate(-90.000000) translate(-37.000000, -30.000000) translate(30.000000, 23.000000)">
-                                                                    <mask id="mask-2502" fill="white">
-                                                                        <use xlink:href="#path-1502"></use>
-                                                                    </mask>
-                                                                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1502"></use>
-                                                                    <g id="COLOR/-black-blue" mask="url(#mask-2502)" fill="#222238" fill-rule="evenodd">
-                                                                        <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z" id="Custom-color-1"></path>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="table-item affiliate-table__level">
-                                    2
-                                </div>
-                                <div class="table-item affiliate-table__user">
-                                    <div class="affiliate-table__logo affiliate-table__logo_black">
-                                        <span>PP</span>
-                                    </div>
-                                </div>
-                                <div class="table-item affiliate-table__username">
-                                    Spiderman
-                                </div>
-                                <div class="table-item affiliate-table__first">
-                                    Piter
-                                </div>
-                                <div class="table-item affiliate-table__last">
-                                    Parker
-                                </div>
-                                <div class="table-item affiliate-table__email">
-                                    parker@gmail.com
-                                </div>
-                                <div class="table-item affiliate-table__tero">
-                                    1657 USDH
-                                </div>
-                            </div>
-                            <div class="affiliate-table__row affiliate-table__row_blue affiliate-table__row_body table-row table-row_body active js-network-2">
-                                <div class="table-item affiliate-table__icon">
-                                    <svg width="10px" height="6px" viewBox="0 0 10 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <defs>
-                                            <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1500"></path>
-                                        </defs>
-                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                            <g id="Affiliate-white" transform="translate(-369.000000, -684.000000)">
-                                                <g id="6" transform="translate(337.000000, 633.000000)">
-                                                    <g id="Tabl-1">
-                                                        <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                            <g id="Detail-1">
-                                                                <g id="chevron-down" transform="translate(30.000000, 23.000000)">
-                                                                    <mask id="mask-2500" fill="white">
-                                                                        <use xlink:href="#path-1500"></use>
-                                                                    </mask>
-                                                                    <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1500"></use>
-                                                                    <g id="Blue-Classic" mask="url(#mask-2500)" fill="#304FFE" fill-rule="evenodd">
-                                                                        <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z"></path>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div class="table-item affiliate-table__level">
-                                    2
-                                </div>
-                                <div class="table-item affiliate-table__user">
-                                    <div class="affiliate-table__logo affiliate-table__logo_blue">
-                                        <span>KC</span>
-                                    </div>
-                                </div>
-                                <div class="table-item affiliate-table__username">
-                                    Superman
-                                </div>
-                                <div class="table-item affiliate-table__first">
-                                    Klark
-                                </div>
-                                <div class="table-item affiliate-table__last">
-                                    Cent
-                                </div>
-                                <div class="table-item affiliate-table__email">
-                                    cent@gmail.com
-                                </div>
-                                <div class="table-item affiliate-table__tero">
-                                    8763 USDH
-                                </div>
-                            </div>
-                            <div class="js-network-2-container">
-                                <div class="affiliate-table__row affiliate-table__row_body table-row table-row_body active">
-                                    <div class="table-item affiliate-table__icon">
-                                        <svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                            <defs>
-                                                <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1502"></path>
-                                            </defs>
-                                            <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <g id="Affiliate-white" transform="translate(-371.000000, -752.000000)">
-                                                    <g id="6" transform="translate(337.000000, 633.000000)">
-                                                        <g id="Tabl-1">
-                                                            <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                                <g id="Detail-2502" transform="translate(0.000000, 70.000000)">
-                                                                    <g id="chevron-down" transform="translate(37.000000, 30.000000) rotate(-90.000000) translate(-37.000000, -30.000000) translate(30.000000, 23.000000)">
-                                                                        <mask id="mask-2502" fill="white">
-                                                                            <use xlink:href="#path-1502"></use>
-                                                                        </mask>
-                                                                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1502"></use>
-                                                                        <g id="COLOR/-black-blue" mask="url(#mask-2502)" fill="#222238" fill-rule="evenodd">
-                                                                            <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z" id="Custom-color-1"></path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="table-item affiliate-table__level">
-                                        3
-                                    </div>
-                                    <div class="table-item affiliate-table__user">
-                                        <div class="affiliate-table__logo affiliate-table__logo_black">
-                                            <span>LL</span>
-                                        </div>
-                                    </div>
-                                    <div class="table-item affiliate-table__username">
-                                        Reporter
-                                    </div>
-                                    <div class="table-item affiliate-table__first">
-                                        Lois
-                                    </div>
-                                    <div class="table-item affiliate-table__last">
-                                        Lane
-                                    </div>
-                                    <div class="table-item affiliate-table__email">
-                                        lane@gmail.com
-                                    </div>
-                                    <div class="table-item affiliate-table__tero">
-                                        1777 USDH
-                                    </div>
-                                </div>
-                                <div class="affiliate-table__row affiliate-table__row_body table-row table-row_body shadowed">
-                                    <div class="table-item affiliate-table__icon">
-                                        <svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-                                            <defs>
-                                                <path d="M7,7.92504209 L3.91247896,4.83752104 C3.68467312,4.60971521 3.31532688,4.60971521 3.08752104,4.83752104 C2.85971521,5.06532688 2.85971521,5.43467312 3.08752104,5.66247896 L6.58752104,9.16247896 C6.81532688,9.39028479 7.18467312,9.39028479 7.41247896,9.16247896 L10.912479,5.66247896 C11.1402848,5.43467312 11.1402848,5.06532688 10.912479,4.83752104 C10.6846731,4.60971521 10.3153269,4.60971521 10.087521,4.83752104 L7,7.92504209 Z" id="path-1502"></path>
-                                            </defs>
-                                            <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                                <g id="Affiliate-white" transform="translate(-371.000000, -752.000000)">
-                                                    <g id="6" transform="translate(337.000000, 633.000000)">
-                                                        <g id="Tabl-1">
-                                                            <g id="Detail" transform="translate(0.000000, 24.000000)">
-                                                                <g id="Detail-2502" transform="translate(0.000000, 70.000000)">
-                                                                    <g id="chevron-down" transform="translate(37.000000, 30.000000) rotate(-90.000000) translate(-37.000000, -30.000000) translate(30.000000, 23.000000)">
-                                                                        <mask id="mask-2502" fill="white">
-                                                                            <use xlink:href="#path-1502"></use>
-                                                                        </mask>
-                                                                        <use id="Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1502"></use>
-                                                                        <g id="COLOR/-black-blue" mask="url(#mask-2502)" fill-rule="evenodd">
-                                                                            <path d="M0,0 L14,0 L14,14 L0,14 L0,0 Z" id="Custom-color-1"></path>
-                                                                        </g>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                    <div class="table-item affiliate-table__level">
-                                        3
-                                    </div>
-                                    <div class="table-item affiliate-table__user">
-                                        <div class="affiliate-table__logo affiliate-table__logo_shadow">
-                                            <span>JO</span>
-                                        </div>
-                                    </div>
-                                    <div class="table-item affiliate-table__username">
-                                        Photographer
-                                    </div>
-                                    <div class="table-item affiliate-table__first">
-                                        Jimmy
-                                    </div>
-                                    <div class="table-item affiliate-table__last">
-                                        Olsen
-                                    </div>
-                                    <div class="table-item affiliate-table__email">
-                                        jimmyolsen@gmail.com
-                                    </div>
-                                    <div class="table-item affiliate-table__tero">
-                                        1777 USDH
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="affiliate__btn-container">
-                            <button class="main-btn">Show All</button>
                         </div>
                     </div>
                 </div>
@@ -988,7 +576,8 @@
     </div>
 </div>
 
-
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://unpkg.com/vue"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/changeColor.js"></script>
 <script type="text/javascript" src="../js/asideToggle.js"></script>
@@ -996,8 +585,7 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script type="text/javascript" src="../js/tableHover.js"></script>
-<script type="text/javascript" src="../js/affiliateList.js"></script>
+<script type="text/javascript" src="../js/binary.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/customSelect.js"></script>
 

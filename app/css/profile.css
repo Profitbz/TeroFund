@@ -88,7 +88,8 @@
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    position: relative; }
     .profile__footer-left {
       width: 77%;
       display: -webkit-box;
@@ -107,7 +108,7 @@
   .profile__switcher {
     margin-right: 17.2%; }
   .profile__checkbox {
-    margin-right: 9.5%;
+    margin-right: 6.5%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -116,3 +117,11 @@
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+  .profile__qr-link {
+    position: absolute;
+    top: 55px;
+    left: 15px;
+    text-decoration: underline;
+    color: #304FFE;
+    font-weight: normal;
+    font-size: 10px; }

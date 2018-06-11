@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var isOpened = false;
+    var isOpened = true;
 
     var lineChart = Highcharts.chart('programmChart', {
         chart: {

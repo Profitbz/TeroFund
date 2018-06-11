@@ -1,9 +1,12 @@
 $(function() {
     // Create the chart
+
+
+
     var donutChart = Highcharts.chart('donut', {
         chart: {
             type: 'pie',
-            margin: 40
+            margin: 40,
         },
         credits: false,
         exporting: false,
@@ -17,7 +20,6 @@ $(function() {
                 colors: [ "#1A37D8", "#324BDA", "#4A60DD", "#6275E1", "#7A8AE3", "#929FE6", "#C2C9ED",  "#D6DAF6", "#D9DDF7", "#E4E7F8"],
                 slicedOffset: 20,
                 borderWidth: 5,
-                borderColor: "#fff",
                 states: {
                     hover: false
                 }
@@ -89,7 +91,17 @@ $(function() {
                             this.dataLabel.css({
                                 color: "transparent"
                             });
-                            $('#donut .highcharts-point')[this.index].setAttribute('stroke','#fff');
+
+                            if (localStorage.getItem('pageColor') === "dark") {
+                                $('#donut .highcharts-point')[this.index].setAttribute('stroke','#202749');
+
+
+                            } else if (localStorage.getItem('pageColor') === "white") {
+                                $('#donut .highcharts-point')[this.index].setAttribute('stroke','#fff');
+                            }
+
+
+
                             $('.donut-summary')[this.index].classList.remove('hover');
                         }
                     }
@@ -168,9 +180,32 @@ $(function() {
         });
     });
 
+    $('.aside-btn').click(function () {
+        console.log(localStorage.getItem('pageColor'));
+        if (localStorage.getItem('pageColor') === "dark") {
 
+            $('#donut .highcharts-point').each(function (i, item) {
+                item.setAttribute('stroke','#202749');
+            });
 
-    // console.log($('#donut .highcharts-point')[0]);
+        } else if (localStorage.getItem('pageColor') === "white") {
+            $('#donut .highcharts-point').each(function (i, item) {
+                item.setAttribute('stroke','#fff');
+            });
+        }
+    });
+
+    if (localStorage.getItem('pageColor') === "dark") {
+
+        $('#donut .highcharts-point').each(function (i, item) {
+            item.setAttribute('stroke','#202749');
+        });
+
+    } else if (localStorage.getItem('pageColor') === "white") {
+        $('#donut .highcharts-point').each(function (i, item) {
+            item.setAttribute('stroke','#fff');
+        });
+    }
 });
 
 

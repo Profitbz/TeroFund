@@ -21,8 +21,6 @@ select {
 
 // Styles
 .dropdown {
-  @include gradient(rgba(255,255,255,.25), rgba(255,255,255,0));
-  background-color: $gray_lighter;
   border-radius: $border_radius;
   border: solid 1px $mainGray;
   box-shadow: 0 1px 0 rgba(0,0,0,0.0075);
@@ -45,15 +43,10 @@ select {
   width: auto;
   color: $mainAshes;
   &:focus {
-    background-color: darken($gray_lighter, 2%);
   }
   &:hover {
-    background-color: darken($gray_lighter, 1%);
   }
   &:active {
-    background-color: darken($gray_lighter, 2.5%) !important;
-    border-color: darken($gray_light, 4%);
-    box-shadow: 0 1px 4px rgba(0,0,0,.05) inset;
   }
   // Arrow
   &:after {
@@ -69,7 +62,6 @@ select {
     transform: translate3d(0, 0, 0);
   }
   &.open {
-    @extend :active;
 
     .list {
       transform: scale(1);
@@ -94,7 +86,6 @@ select {
     transform: scale(.75);
     transform-origin: 50% 0;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, .09);
-    background-color: #fff;
     border-radius: $border_radius;
     margin-top: 4px;
     padding: 3px 0;
@@ -118,14 +109,11 @@ select {
     text-align: left;
     transition: all 0.2s;
     &:hover, &:focus {
-      background-color:  darken($gray_lighter, 2%)!important;
     }
     &.selected {
       font-weight: 600;
-      background: darken($gray_lighter, 10%);
     }
     &.selected:focus {
-      background: darken($gray_lighter, 2%);
     }
   }
 }

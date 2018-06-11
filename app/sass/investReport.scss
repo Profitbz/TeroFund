@@ -75,11 +75,30 @@
       overflow: hidden;
     }
 
-    &__chart {
+    &__container {
       position: absolute;
       left: -10%;
+    }
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__chart {
       width: 700px;
       height: 370px;
+    }
+
+    &__bg {
+      width: 310px;
+      height: 310px;
+      border: 1px solid #304FFE;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      background: transparent;
+      position: absolute;
+      top: 31px;
+      left: 195px;
     }
 
     &__summ {
@@ -113,7 +132,7 @@
   }
 
   &__chart {
-    width: 900px;
+    width: 1100px;
     margin: 0 auto;
     position: absolute;
     top: 2rem;
@@ -303,8 +322,8 @@
 
 .investReportChart {
   height: 280px;
-  min-width: 1050px;
-  max-width: 1050px;
+  min-width: 1280px;
+  max-width: 1280px;
   position: absolute;
   left: -2rem;
   top: 4.2rem;

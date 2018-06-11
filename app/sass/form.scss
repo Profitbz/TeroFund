@@ -3,11 +3,29 @@
 
 .form {
 
+  &__modal-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__container {
     min-width: 30.5%;
     margin-bottom: 1.4rem;
     display: flex;
     flex-direction: column;
+    position: relative;
+
+    &_modal {
+      max-width: 45%;
+    }
+
+    &_reinvest {
+      margin-top: 1rem;
+    }
+
+    &_deposit {
+      margin-top: 1.4rem;
+    }
 
     &_lg {
       margin-right: 0;
@@ -40,9 +58,9 @@
       font-weight: normal;
     }
 
-    &:focus + .form__title {
-      color: $mainGray;
-    }
+    //&:focus + .form__title {
+    //  color: $mainGray;
+    //}
 
   }
 
@@ -63,6 +81,19 @@
       }
   }
 
+  &__tip {
+    display: block;
+    min-width: 100%;
+    text-align: left;
+    padding-top: 0.65rem;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
 
-
+.form-input__currency {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 16px;
 }

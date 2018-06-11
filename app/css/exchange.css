@@ -59,6 +59,10 @@
             transform: translateY(-32%); }
     .exchange-form__btn_sell {
       background: #FF3C54; }
+      .exchange-form__btn_sell:hover {
+        background: #FF6376; }
+      .exchange-form__btn_sell:active {
+        background: #C43A4B; }
   .exchange-form__free {
     font-size: 14px;
     color: #919BB0;

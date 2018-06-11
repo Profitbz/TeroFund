@@ -69,6 +69,7 @@ input, select {
   font-weight: inherit;
   font-size: inherit;
   padding: 0;
+  background-color: transparent;
 }
 
 .current {
@@ -84,7 +85,7 @@ input, select {
 }
 
 .page-wrapper.dark {
-
+  color: $mainAshes;
 }
 
 .main-container {
@@ -106,9 +107,14 @@ input, select {
   min-width: 1256px;
 }
 
+.main-container.space-between.opened {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3%;
+}
+
 .block-title {
   font-size: 20px;
-  color: $mainBlack;
 }
 
 .ta-center {
@@ -127,6 +133,14 @@ input, select {
   background: $mainBlue;
   letter-spacing: 2px;
   border-radius: 60px;
+}
+
+.main-btn:hover {
+  background: #5972FE;
+}
+
+.main-btn:active {
+  background: #0222D5;
 }
 
 .highcharts-data-label-connector {
@@ -238,6 +252,11 @@ input, select {
     }
   }
 }
+
+.highcharts-background {
+  fill: transparent;
+}
+
 
 //
 //.isVisible {

@@ -1,3 +1,13 @@
+.form__modal-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .form__container {
   min-width: 30.5%;
   margin-bottom: 1.4rem;
@@ -9,7 +19,14 @@
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
+  .form__container_modal {
+    max-width: 45%; }
+  .form__container_reinvest {
+    margin-top: 1rem; }
+  .form__container_deposit {
+    margin-top: 1.4rem; }
   .form__container_lg {
     margin-right: 0;
     min-width: 100%;
@@ -50,8 +67,6 @@
   .form__input::placeholder {
     color: rgba(145, 155, 176, 0.5);
     font-weight: normal; }
-  .form__input:focus + .form__title {
-    color: rgba(145, 155, 176, 0.5); }
 
 .form__warn {
   display: block;
@@ -66,3 +81,17 @@
   .form__warn.active {
     visibility: visible;
     opacity: 1; }
+
+.form__tip {
+  display: block;
+  min-width: 100%;
+  text-align: left;
+  padding-top: 0.65rem;
+  font-size: 12px;
+  font-weight: normal; }
+
+.form-input__currency {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  font-size: 16px; }
