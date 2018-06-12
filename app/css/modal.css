@@ -6,6 +6,8 @@
   .modal-title {
     font-size: 20px;
     margin-bottom: 1.4rem; }
+    .modal-title_sub {
+      margin-bottom: 0.4rem; }
   .modal-form__limit {
     font-size: 12px;
     font-weight: normal;
@@ -29,6 +31,24 @@
       margin-top: 3.2rem; }
     .modal-btn_withdraw {
       margin-top: 2.1rem; }
+    .modal-btn_login {
+      width: 100%;
+      margin-top: 0.8rem;
+      margin-bottom: 2rem; }
+  .modal__link {
+    font-size: 12px;
+    font-weight: normal;
+    color: #919BB0;
+    text-decoration: underline;
+    padding-bottom: 0.5rem; }
+    .modal__link a:hover {
+      cursor: pointer;
+      color: #304FFE; }
+    .modal__link_register {
+      color: #455074;
+      text-decoration: none; }
+      .modal__link_register a {
+        color: #304FFE; }
   .modal-qr {
     text-align: center; }
   .modal__symbol {
@@ -36,6 +56,31 @@
     -webkit-transform: translateY(14%);
         -ms-transform: translateY(14%);
             transform: translateY(14%); }
+  .modal-sub {
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 1.6rem; }
+  .modal-check {
+    font-size: 12px;
+    font-weight: normal;
+    color: #919BB0;
+    line-height: 14px; }
+    .modal-check__link {
+      font-weight: bold; }
+      .modal-check__link:hover {
+        color: #304FFE; }
+    .modal-check__container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding-bottom: 1rem; }
+      .modal-check__container_last {
+        padding-bottom: 0.5rem; }
 
 /* --------------------------------
 
@@ -162,6 +207,8 @@ xpopup
   -webkit-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
      transition-duration: 0.3s; }
+  .cd-popup-container_register {
+    padding-bottom: 2.1rem; }
 
 .cd-popup-container p {
   text-align: left; }
@@ -214,4 +261,14 @@ xpopup
 
 @media only screen and (min-width: 1170px) {
   .cd-popup-container {
-    margin: 13.8em auto; } }
+    margin: 13.8em auto; }
+    .cd-popup-container_register {
+      margin-top: 2.5rem; } }
+
+.g-recaptcha {
+  height: 4rem; }
+
+.g-recaptcha iframe {
+  -webkit-transform: translate(-17.4%, -40%) scale(0.65);
+      -ms-transform: translate(-17.4%, -40%) scale(0.65);
+          transform: translate(-17.4%, -40%) scale(0.65); }

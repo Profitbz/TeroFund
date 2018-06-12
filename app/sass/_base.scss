@@ -47,7 +47,7 @@ a {
   line-height: 0;
   text-decoration: inherit;
   color: inherit;
-  font-size: 14px;
+  font-size: inherit;
 }
 
 span, a {
@@ -255,6 +255,12 @@ input, select {
 
 .highcharts-background {
   fill: transparent;
+}
+
+.landing-body {
+  background-color: #2A3156;
+  min-width: 1440px;
+  overflow-x: auto;
 }
 
 

@@ -10,6 +10,9 @@
     font-size: 20px;
     margin-bottom: 1.4rem;
 
+    &_sub {
+      margin-bottom: 0.4rem;
+    }
   }
 
   &-form__limit {
@@ -47,6 +50,38 @@
     &_withdraw {
       margin-top: 2.1rem;
     }
+
+
+    &_login {
+      width: 100%;
+      margin-top: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+
+
+  }
+
+  &__link {
+    font-size: 12px;
+    font-weight: normal;
+    color: $mainAshes;
+    text-decoration: underline;
+    padding-bottom: 0.5rem;
+
+    & a:hover {
+      cursor: pointer;
+      color: $mainBlue;
+    }
+
+    &_register {
+      color: $mainBlack;
+      text-decoration: none;
+
+      a {
+        color: $mainBlue;
+      }
+    }
   }
 
   &-qr {
@@ -57,6 +92,38 @@
     font-size: 14px;
     transform: translateY(14%);
   }
+
+  &-sub {
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 1.6rem;
+  }
+
+  &-check {
+    font-size: 12px;
+    font-weight: normal;
+    color: $mainAshes;
+    line-height: 14px;
+
+    &__link {
+      font-weight: bold;
+
+      &:hover {
+        color: $mainBlue;
+      }
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      padding-bottom: 1rem;
+
+      &_last {
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+
 }
 
 
@@ -190,6 +257,10 @@ xpopup
   -moz-transition-duration: 0.3s;
   transition-duration: 0.3s;
 
+  &_register {
+    padding-bottom: 2.1rem;
+  }
+
 
 }
 .cd-popup-container p {
@@ -236,6 +307,8 @@ xpopup
   width: 30px;
   height: 30px;
 }
+
+
 //.cd-popup-container .cd-popup-close::before, .cd-popup-container .cd-popup-close::after {
 //  content: '';
 //  position: absolute;
@@ -271,5 +344,17 @@ xpopup
 @media only screen and (min-width: 1170px) {
   .cd-popup-container {
     margin: 13.8em auto;
+
+    &_register {
+      margin-top: 2.5rem;
+    }
   }
+}
+
+.g-recaptcha {
+  height: 4rem;
+}
+
+.g-recaptcha iframe {
+  transform: translate(-17.4%, -40%) scale(0.65);
 }

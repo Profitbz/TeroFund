@@ -1,10 +1,14 @@
 jQuery(document).ready(function($){
 
-    function toggleModal(modal, btn) {
+    function toggleModal(modal, btn, oldModal) {
         //open popup
         btn.on('click', function(event){
             event.preventDefault();
             modal.addClass('is-visible');
+
+            if (oldModal) {
+                oldModal.removeClass('is-visible');
+            }
         });
 
         //close popup
@@ -21,6 +25,9 @@ jQuery(document).ready(function($){
                 modal.removeClass('is-visible');
             }
         });
+
+
+
     }
 
     // convert popup
@@ -39,4 +46,17 @@ jQuery(document).ready(function($){
 
     toggleModal($('.js-modal-withdraw'), $('.js-withdraw-modal'));
 
+    // landing sign in
+
+    toggleModal($('.js-modal-sign-in'), $('.js-sign-in-modal'));
+    toggleModal($('.js-modal-sign-in'), $('.js-sign-in-reg-modal'), $('.js-modal-sign-up'));
+
+    // landing forget pass
+
+    toggleModal($('.js-modal-forget'), $('.js-forget-modal'), $('.js-modal-sign-in'));
+
+    // landing sign up
+
+    toggleModal($('.js-modal-sign-up'), $('.js-sign-up-modal'));
+    toggleModal($('.js-modal-sign-up'), $('.js-sign-up-reg-modal'), $('.js-modal-sign-in'));
 });
