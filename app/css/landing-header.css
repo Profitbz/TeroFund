@@ -1,7 +1,10 @@
 .landing-header {
   background: url("../img/landing-header-bg.svg");
   background-repeat: no-repeat;
-  min-height: 100vh; }
+  min-height: 803px; }
+  .landing-header_white {
+    background: none;
+    min-height: 0; }
   .landing-header__bar {
     display: -webkit-box;
     display: -webkit-flex;

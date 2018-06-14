@@ -18,8 +18,21 @@
 
 /* ---- main styles ----- */
 
+/* ---- landing ----- */
+
 @import "landing-header";
 @import "greeting";
+@import "landing-content";
+@import "landing-footer";
+@import "hedge";
+@import "assets";
+@import "reviews";
+@import "article";
+@import "docs";
+@import "about";
+
+/* ---- personal cabinet ----- */
+
 @import "aside";
 @import "header";
 @import "content";

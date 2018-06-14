@@ -5,8 +5,13 @@
 .landing-header {
   background: url("../img/landing-header-bg.svg");
   background-repeat: no-repeat;
-  min-height: 100vh;
+  //min-height: 100vh;
+  min-height: 803px;
 
+  &_white {
+    background: none;
+    min-height: 0;
+  }
 
 
   &__bar {
