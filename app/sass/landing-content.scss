@@ -157,11 +157,31 @@
   &__list {
     display: flex;
     align-items: center;
-    padding-top: 2.4rem;
-    padding-left: 23rem;
+
   }
 
   &__item {
     padding-right: 4.9rem;
+  }
+
+  &__wrapper   {
+    position: relative;
+    padding-top: 2.4rem;
+    padding-left: 9rem;
+
+    & .entry-shadow {
+      position: absolute;
+      bottom: 0;
+      left: 9rem;
+      z-index: 10;
+    }
+
+    & .out-shadow {
+      position: absolute;
+      bottom: 0;
+      right: 6rem;
+      transform: rotate(180deg);
+      z-index: 10;
+    }
   }
 }

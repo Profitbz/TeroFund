@@ -35,6 +35,21 @@
     transform: translate( 3%, 10%);
   }
 
+  &__image {
+    height: 425px;
+    width: 482px;
+    position: relative;
+    overflow: hidden;
+
+    & > img {
+      position: absolute;
+      z-index: 1;
+      left: -793px;
+      top: -109px;
+    }
+
+  }
+
   &__title {
     color: #EAEBEE;
     font-size: 32px;

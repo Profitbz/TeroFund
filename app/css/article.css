@@ -50,3 +50,9 @@
       color: #919BB0;
       line-height: 26px;
       font-weight: normal; }
+
+#article-chart .highcharts-button {
+  display: none; }
+
+#article-chart .highcharts-container {
+  background: #fcfcfc; }

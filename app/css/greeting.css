@@ -32,6 +32,16 @@
     -webkit-transform: translate(3%, 10%);
         -ms-transform: translate(3%, 10%);
             transform: translate(3%, 10%); }
+  .greeting__image {
+    height: 425px;
+    width: 482px;
+    position: relative;
+    overflow: hidden; }
+    .greeting__image > img {
+      position: absolute;
+      z-index: 1;
+      left: -793px;
+      top: -109px; }
   .greeting__title {
     color: #EAEBEE;
     font-size: 32px;

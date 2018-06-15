@@ -17,6 +17,22 @@
 
   &__left {
     padding-right: 4.7rem;
+
+    & .highcharts-title {
+      display: none;
+    }
+
+    & .highcharts-button {
+      display: none;
+    }
+
+    & .highcharts-yaxis-labels text:last-child {
+      display: none;
+    }
+
+    .highcharts-container {
+      background: #fcfcfc;
+    }
   }
 
   &-chart {

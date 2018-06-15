@@ -273,6 +273,11 @@ input, select {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.marquee {
+  width: 1195px;
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: hidden; }
+
 .form__modal-wrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2541,6 +2546,16 @@ xpopup
     -webkit-transform: translate(3%, 10%);
         -ms-transform: translate(3%, 10%);
             transform: translate(3%, 10%); }
+  .greeting__image {
+    height: 425px;
+    width: 482px;
+    position: relative;
+    overflow: hidden; }
+    .greeting__image > img {
+      position: absolute;
+      z-index: 1;
+      left: -793px;
+      top: -109px; }
   .greeting__title {
     color: #EAEBEE;
     font-size: 32px;
@@ -2740,11 +2755,26 @@ xpopup
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center;
-    padding-top: 2.4rem;
-    padding-left: 23rem; }
+            align-items: center; }
   .founds__item {
     padding-right: 4.9rem; }
+  .founds__wrapper {
+    position: relative;
+    padding-top: 2.4rem;
+    padding-left: 9rem; }
+    .founds__wrapper .entry-shadow {
+      position: absolute;
+      bottom: 0;
+      left: 9rem;
+      z-index: 10; }
+    .founds__wrapper .out-shadow {
+      position: absolute;
+      bottom: 0;
+      right: 6rem;
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg);
+      z-index: 10; }
 
 .landing-footer {
   background: #151A31;
@@ -2798,6 +2828,14 @@ xpopup
 
 .hedge__left {
   padding-right: 4.7rem; }
+  .hedge__left .highcharts-title {
+    display: none; }
+  .hedge__left .highcharts-button {
+    display: none; }
+  .hedge__left .highcharts-yaxis-labels text:last-child {
+    display: none; }
+  .hedge__left .highcharts-container {
+    background: #fcfcfc; }
 
 .hedge-chart__title {
   font-size: 20px;
@@ -3002,6 +3040,12 @@ xpopup
       color: #919BB0;
       line-height: 26px;
       font-weight: normal; }
+
+#article-chart .highcharts-button {
+  display: none; }
+
+#article-chart .highcharts-container {
+  background: #fcfcfc; }
 
 .docs__container {
   padding-top: 4rem;

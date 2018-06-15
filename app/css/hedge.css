@@ -13,6 +13,14 @@
 
 .hedge__left {
   padding-right: 4.7rem; }
+  .hedge__left .highcharts-title {
+    display: none; }
+  .hedge__left .highcharts-button {
+    display: none; }
+  .hedge__left .highcharts-yaxis-labels text:last-child {
+    display: none; }
+  .hedge__left .highcharts-container {
+    background: #fcfcfc; }
 
 .hedge-chart__title {
   font-size: 20px;
