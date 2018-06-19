@@ -1,12 +1,76 @@
 @import "vars";
 
+.Treant {
+  overflow: initial !important;
+  width: 100%;
+  height: 100%;
+}
+
+.node.bug {
+  left: 485px !important;
+}
+
 .binary {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  max-height: 550px;
   overflow: auto;
+  padding: 100px 0;
+  margin: -100px 0;
+
+  &__wrapper {
+    padding-bottom: 4rem;
+  }
+
+  &__btns {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2rem;
+    cursor: pointer;
+  }
+
+  &__btn svg text {
+    transform: translate(-1%, 3%);
+  }
+
+ //&__2 {
+ //  max-height: 380px;
+ //}
+ //
+ // &__3 {
+ //   max-height: 525px;
+ // }
+ //
+ // &__4 {
+ //   max-height: 670px;
+ // }
+ //
+ // &__5 {
+ //   max-height: 815px;
+ // }
+ //
+ // &__6 {
+ //   max-height: 960px;
+ // }
+ //
+ // &__7 {
+ //   max-height: 1105px;
+ // }
+ //
+ // &__8 {
+ //   max-height: 1250px;
+ // }
+ //
+ // &__9 {
+ //   max-height: 1395px;
+ // }
+ //
+ // &__10 {
+ //   max-height: 1540px;
+ // }
 }
 
 .tree {
@@ -40,6 +104,8 @@
   &__item {
     position: relative;
   }
+
+
 
   &__header {
     display: flex;
@@ -91,7 +157,23 @@
 
   &__list {
     top: 100px;
-    left: 45px
+    left: 45px;
+
+    &_top {
+      top: -370px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &_right {
+      left: -35px;
+    }
+
+    &_left {
+      left: 83px;
+    }
   }
 
   &__user {

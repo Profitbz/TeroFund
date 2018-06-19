@@ -5033,6 +5033,14 @@ xpopup
           justify-content: flex-end;
   padding-top: 0.6rem; }
 
+.Treant {
+  overflow: initial !important;
+  width: 100%;
+  height: 100%; }
+
+.node.bug {
+  left: 485px !important; }
+
 .binary {
   display: -webkit-box;
   display: -webkit-flex;
@@ -5050,8 +5058,30 @@ xpopup
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  max-height: 550px;
-  overflow: auto; }
+  overflow: auto;
+  padding: 100px 0;
+  margin: -100px 0; }
+  .binary__wrapper {
+    padding-bottom: 4rem; }
+  .binary__btns {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 2rem;
+    cursor: pointer; }
+  .binary__btn svg text {
+    -webkit-transform: translate(-1%, 3%);
+        -ms-transform: translate(-1%, 3%);
+            transform: translate(-1%, 3%); }
 
 .tree__parent {
   display: -webkit-box;
@@ -5152,6 +5182,14 @@ xpopup
 .tree__list {
   top: 100px;
   left: 45px; }
+  .tree__list_top {
+    top: -370px; }
+    .tree__list_top::before {
+      display: none; }
+  .tree__list_right {
+    left: -35px; }
+  .tree__list_left {
+    left: 83px; }
 
 .tree__user {
   font-size: 14px;
