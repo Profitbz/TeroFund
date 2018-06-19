@@ -2,11 +2,15 @@
 
 .landing-footer {
   background: #151A31;
-  display: flex;
-  align-items: center;
-  padding-top: 3.1rem;
-  padding-bottom: 3rem;
-  padding-left: 7.6rem;
+
+
+  &__container  {
+    display: flex;
+    align-items: center;
+    padding-top: 3.1rem;
+    padding-bottom: 3rem;
+    padding-left: 7.6rem;
+  }
 
   &__contacts {
     display: flex;

@@ -1,12 +1,12 @@
 @import "vars";
 
-
-
 .landing-header {
   background: url("../img/landing-header-bg.svg");
   background-repeat: no-repeat;
   //min-height: 100vh;
   min-height: 803px;
+  background-size: cover;
+  background-position: bottom;
 
   &_white {
     background: none;
