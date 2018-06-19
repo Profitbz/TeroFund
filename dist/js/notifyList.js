@@ -9,7 +9,6 @@ $(document).ready(function () {
 
     $(document).click(function (e) {
         e.stopPropagation();
-        console.log(e.target.closest('.js-notify-list'));
         if (!e.target.closest('.js-notify-list')) {
             $('.js-notify-list').slideUp();
         }

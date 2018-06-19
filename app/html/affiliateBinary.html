@@ -5,7 +5,9 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../treant-js-master/Treant.css">
     <link rel="stylesheet" href="../css/main.css">
+
     <title>Terofund</title>
 </head>
 <body>
@@ -539,34 +541,165 @@
                     <li class="transaction-links__item active"><a>Binary</a></li>
                 </ul>
                 <div class="binary main-container main-container_styless opened">
-                    <div id="app">
-                        <div class="controls">
-                            <div>
-                                <label>Adjust width</label>
-                                <input type="range" v-model="settings.width" min="0" max="100" />
+                    <div class="tree__parent" style="display: none">
+                        <div class="tree-aside tree-aside_left">
+                            <p class="tree-aside__title">Left</p>
+                            <p class="tree-aside__text">34 member</p>
+                            <div class="tree-aside__text">456,456 USD</div>
+                        </div>
+                        <div class="tree__item">
+                            <div class="tree__header">
+                                <div class="affiliate-table__logo affiliate-table__logo_blue tree__logo">
+                                    <span>CL</span>
+                                </div>
+                                <span class="tree__text">Cryptoconsulting</span>
                             </div>
-                            <div>
-                                <label>Stroke color</label>
-                                <input type="color" v-model="settings.strokeColor" />
-                            </div>
-                            <div>
-                                Selected: {{ selected }}
+                            <div class="user-notify-list tree__list js-tree-list" style="display: none">
+                                <div class="user-notify-list__title tree__header-wrapper">
+                                    <div class="tree__header-container">
+                                        <div class="affiliate-table__logo tree__user-logo affiliate-table__logo_blue">
+                                            <span>LL</span>
+                                        </div>
+                                        <span class="tree__user">John Doe</span>
+                                    </div>
+                                    <div class="tree__info">
+                                        Information
+                                    </div>
+                                </div>
+                                <div class="user-notify-list__item">
+								<span class="user-notify-list__icon tree__icon">
+                                    <svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                            <path d="M17.5,17.5 C17.5,17.9602373 17.126904,18.3333333 16.6666667,18.3333333 C16.2064294,18.3333333 15.8333333,17.9602373 15.8333333,17.5 L15.8333333,15.8333333 C15.8333333,14.4526215 14.7140452,13.3333333 13.3333333,13.3333333 L6.66666667,13.3333333 C5.28595479,13.3333333 4.16666667,14.4526215 4.16666667,15.8333333 L4.16666667,17.5 C4.16666667,17.9602373 3.79357062,18.3333333 3.33333333,18.3333333 C2.87309604,18.3333333 2.5,17.9602373 2.5,17.5 L2.5,15.8333333 C2.5,13.5321469 4.36548021,11.6666667 6.66666667,11.6666667 L13.3333333,11.6666667 C15.6345198,11.6666667 17.5,13.5321469 17.5,15.8333333 L17.5,17.5 Z M10,10 C7.69881354,10 5.83333333,8.13451979 5.83333333,5.83333333 C5.83333333,3.53214688 7.69881354,1.66666667 10,1.66666667 C12.3011865,1.66666667 14.1666667,3.53214688 14.1666667,5.83333333 C14.1666667,8.13451979 12.3011865,10 10,10 Z M10,8.33333333 C11.3807119,8.33333333 12.5,7.21404521 12.5,5.83333333 C12.5,4.45262146 11.3807119,3.33333333 10,3.33333333 C8.61928813,3.33333333 7.5,4.45262146 7.5,5.83333333 C7.5,7.21404521 8.61928813,8.33333333 10,8.33333333 Z" id="path-133"></path>
+                                        </defs>
+                                        <g class="tree__fill" id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Affiliate-Binary-white-Notification" transform="translate(-720.000000, -504.000000)">
+                                                <g id="Notification" transform="translate(694.000000, 356.000000)">
+                                                    <g id="Group-10" transform="translate(0.000000, 125.000000)">
+                                                        <g id="user" transform="translate(24.000000, 22.000000)">
+                                                            <mask id="mask-233" fill="white">
+                                                                <use xlink:href="#path-133"></use>
+                                                            </mask>
+                                                            <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-133"></use>
+                                                            <g id="Blue-Light" mask="url(#mask-233)" fill-rule="evenodd">
+                                                                <path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z" id="Black-Blue"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+								</span>
+                                    <span class="user-notify-list__text tree__sub">Name</span>
+                                    <span class="tree__value">Salpool</span>
+                                </div>
+                                <div class="user-notify-list__item">
+								<span class="user-notify-list__icon tree__icon">
+                                    <svg width="20px" height="16px" viewBox="0 0 20 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                            <path d="M19.1668092,4.99829112 C19.1668097,4.99870678 19.1668099,4.99912244 19.1668097,4.99953809 C19.1668098,4.99969205 19.1668098,4.99984603 19.1668098,5 L19.1668098,15 C19.1668098,16.376904 18.043705,17.5 16.6667903,17.5 L3.33335285,17.5 C1.95643814,17.5 0.833333333,16.376904 0.833333333,15 L0.833333333,5 C0.833333333,4.99984603 0.833333347,4.99969205 0.833333375,4.99953809 C0.833333243,4.99912244 0.833333422,4.99870678 0.83333391,4.99829112 C0.834262789,3.62216683 1.95700787,2.5 3.33335285,2.5 L16.6667903,2.5 C18.0431352,2.5 19.1658803,3.62216683 19.1668092,4.99829097 Z M17.4112571,4.6282905 C17.2734403,4.35576935 16.9900392,4.16666667 16.6667382,4.16666667 L3.33340489,4.16666667 C3.01010386,4.16666667 2.72670284,4.35576935 2.58888603,4.6282905 L10.0000716,9.81612037 L17.4112571,4.6282905 Z M17.5000716,6.6005463 L10.4779568,11.5160266 C10.1910234,11.71688 9.80911972,11.71688 9.52218626,11.5160266 L2.50007155,6.6005463 L2.50007155,15 C2.50007155,15.4564294 2.87697551,15.8333333 3.33340489,15.8333333 L16.6667382,15.8333333 C17.1231676,15.8333333 17.5000716,15.4564294 17.5000716,15 L17.5000716,6.6005463 Z" id="path-1512"></path>
+                                        </defs>
+                                        <g id="Fund512" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Affiliate-Binary-white-Notification512" transform="translate(-718.000000, -568.000000)">
+                                                <g id="Notification512" transform="translate(694.000000, 356.000000)">
+                                                    <g id="Group-9512" transform="translate(0.000000, 188.000000)">
+                                                        <g id="mail512" transform="translate(24.000000, 22.000000)">
+                                                            <mask id="mask-2512" fill="white">
+                                                                <use xlink:href="#path-1512"></use>
+                                                            </mask>
+                                                            <use id="Combined-Shape512" fill="#000000" fill-rule="nonzero" xlink:href="#path-1512"></use>
+                                                            <g class="tree__fill" id="Blue512" mask="url(#mask-2512)" fill-rule="evenodd">
+                                                                <path d="M0,0 L20,0 L20,20 L0,20 L0,0 Z" id="Black-Blue512"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                    <span class="user-notify-list__text tree__sub">Sponsor</span>
+                                    <span class="tree__value">Cryptoconsulting</span>
+                                </div>
+                                <div class="user-notify-list__item">
+								<span class="user-notify-list__icon tree__icon">
+                                    <svg width="16px" height="18px" viewBox="0 0 16 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                            <path d="M15,6.75 L15,4.5 C15,4.08578644 14.6642136,3.75 14.25,3.75 L12.75,3.75 L12.75,4.5 C12.75,4.91421356 12.4142136,5.25 12,5.25 C11.5857864,5.25 11.25,4.91421356 11.25,4.5 L11.25,3.75 L6.75,3.75 L6.75,4.5 C6.75,4.91421356 6.41421356,5.25 6,5.25 C5.58578644,5.25 5.25,4.91421356 5.25,4.5 L5.25,3.75 L3.75,3.75 C3.33578644,3.75 3,4.08578644 3,4.5 L3,6.75 L15,6.75 Z M15,8.25 L3,8.25 L3,15 C3,15.4142136 3.33578644,15.75 3.75,15.75 L14.25,15.75 C14.6642136,15.75 15,15.4142136 15,15 L15,8.25 Z M6.75,2.25 L11.25,2.25 L11.25,1.5 C11.25,1.08578644 11.5857864,0.75 12,0.75 C12.4142136,0.75 12.75,1.08578644 12.75,1.5 L12.75,2.25 L14.25,2.25 C15.4926407,2.25 16.5,3.25735931 16.5,4.5 L16.5,15 C16.5,16.2426407 15.4926407,17.25 14.25,17.25 L3.75,17.25 C2.50735931,17.25 1.5,16.2426407 1.5,15 L1.5,4.5 C1.5,3.25735931 2.50735931,2.25 3.75,2.25 L5.25,2.25 L5.25,1.5 C5.25,1.08578644 5.58578644,0.75 6,0.75 C6.41421356,0.75 6.75,1.08578644 6.75,1.5 L6.75,2.25 Z" id="path-1123"></path>
+                                        </defs>
+                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Affiliate-Binary-white-Notification" transform="translate(-722.000000, -630.000000)">
+                                                <g id="Notification" transform="translate(694.000000, 356.000000)">
+                                                    <g id="Group-8" transform="translate(0.000000, 251.000000)">
+                                                        <g id="calendar" transform="translate(27.000000, 23.000000)">
+                                                            <mask id="mask-2123" fill="white">
+                                                                <use xlink:href="#path-1123"></use>
+                                                            </mask>
+                                                            <use id="Combined-Shape" fill="#000000" fill-rule="nonzero" xlink:href="#path-1123"></use>
+                                                            <g class="tree__fill" id="Blue-Light" mask="url(#mask-2123)" fill-rule="evenodd">
+                                                                <path d="M0,0 L18,0 L18,18 L0,18 L0,0 Z" id="Black-Blue"></path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>
+                                    <span class="user-notify-list__text tree__sub">Date</span>
+                                    <span class="tree__value">04.01.18</span>
+                                </div>
+                                <div class="user-notify-list__item">
+								<span class="user-notify-list__icon tree__icon">
+                                    <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                        <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+                                        <desc>Created with Sketch.</desc>
+                                        <defs>
+                                            <path d="M8.25,16.5 C3.69365081,16.5 0,12.8063492 0,8.25 C0,3.69365081 3.69365081,0 8.25,0 C12.8063492,0 16.5,3.69365081 16.5,8.25 C16.5,12.8063492 12.8063492,16.5 8.25,16.5 Z M8.25,15 C11.9779221,15 15,11.9779221 15,8.25 C15,4.52207794 11.9779221,1.5 8.25,1.5 C4.52207794,1.5 1.5,4.52207794 1.5,8.25 C1.5,11.9779221 4.52207794,15 8.25,15 Z M9,3.75 L9,7.93933983 L11.0303301,9.96966991 C11.3232233,10.2625631 11.3232233,10.7374369 11.0303301,11.0303301 C10.7374369,11.3232233 10.2625631,11.3232233 9.96966991,11.0303301 L7.71966991,8.78033009 C7.57901763,8.6396778 7.5,8.44891237 7.5,8.25 L7.5,3.75 C7.5,3.33578644 7.83578644,3 8.25,3 C8.66421356,3 9,3.33578644 9,3.75 Z" id="path-1566"></path>
+                                        </defs>
+                                        <g id="Fund" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                            <g id="Affiliate-Binary-white-Notification" transform="translate(-721.000000, -692.000000)">
+                                                <g id="Notification" transform="translate(694.000000, 356.000000)">
+                                                    <g id="Group-7" transform="translate(0.000000, 314.000000)">
+                                                        <g id="clock" transform="translate(27.000000, 22.000000)">
+                                                            <g id="Group" transform="translate(0.750000, 0.750000)">
+                                                                <mask id="mask-2566" fill="white">
+                                                                    <use xlink:href="#path-1566"></use>
+                                                                </mask>
+                                                                <g id="Combined-Shape" fill-rule="nonzero"></g>
+                                                                <g class="tree__fill" id="Blue-Light" mask="url(#mask-2566)">
+                                                                    <g transform="translate(-0.750000, -0.750000)" id="Black-Blue">
+                                                                        <path d="M0,0 L18,0 L18,18 L0,18 L0,0 Z"></path>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+								</span>
+                                    <span class="user-notify-list__text tree__sub">Time</span>
+                                    <span class="tree__value">11:15:52</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="svg-container" :style="{width: settings.width + '%'}">
-                            <svg id="svgId" viewBox="0 0 960 600" preserveAspectRatio="xMinYMin meet">
-                                <transition-group tag="g" name="line">
-                                    <path v-for="link in links" class="link" v-bind:key="link.id" v-bind:d="link.d" v-bind:style="link.style"></path>
-                                </transition-group>
-                                <transition-group tag="g" name="list">
-                                    <g class="node" v-on:click="select(index, node)"  v-for="(node, index) in nodes" v-bind:key="node.id" v-bind:style="node.style">
-                                        <circle v-bind:r="node.r" v-bind:style="{'fill': index == selected ? '#ff0000' : '#bfbfbf'}"></circle>
-                                        <text v-bind:dx="node.textpos.x" v-bind:dy="node.textpos.y" v-bind:style="node.textStyle">{{ node.text }}</text>
-                                    </g>
-                                </transition-group>
-                            </svg>
+                        <div class="tree-aside tree-aside_right">
+                            <p class="tree-aside__title">Right</p>
+                            <p class="tree-aside__text">47 member</p>
+                            <div class="tree-aside__text">65,32 USD</div>
                         </div>
                     </div>
+
+                    <div id="tree-simple"> </div>
                 </div>
             </div>
 
@@ -576,8 +709,6 @@
     </div>
 </div>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script src="https://unpkg.com/vue"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/changeColor.js"></script>
 <script type="text/javascript" src="../js/asideToggle.js"></script>
@@ -585,7 +716,33 @@
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
-<script type="text/javascript" src="../js/binary.js"></script>
+<script src="../treant-js-master/vendor/raphael.js"></script>
+<script src="../treant-js-master/Treant.js"></script>
+
+<script src="../js/binary.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.js-tree__parent').parent().css("left", "441.5px");
+
+        $('.tree__header').click(function (e) {
+            e.stopPropagation();
+            $('.js-tree-list').slideUp();
+            $(this).parent().find('.js-tree-list').slideToggle();
+            $('.affiliate-table__logo_blue').addClass('affiliate-table__logo_black');
+            $('.affiliate-table__logo_blue').removeClass('affiliate-table__logo_blue');
+            $(this).parent().find('.affiliate-table__logo').addClass('affiliate-table__logo_blue');
+            $(this).parent().find('.affiliate-table__logo').removeClass('affiliate-table__logo_black');
+
+            $(document).click(function (e) {
+                e.stopPropagation();
+                if (!e.target.closest('.js-tree-list')) {
+                    $(this).find('.js-tree-list').slideUp();
+                }
+            });
+        });
+
+    });
+</script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/customSelect.js"></script>
 
