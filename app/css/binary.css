@@ -47,6 +47,11 @@
     -webkit-transform: translate(-1%, 3%);
         -ms-transform: translate(-1%, 3%);
             transform: translate(-1%, 3%); }
+  .binary__minus {
+    cursor: pointer;
+    height: 19px;
+    width: 19px;
+    background-image: url("../img/binary-button-minus.svg"); }
 
 .tree__parent {
   display: -webkit-box;

@@ -5,6 +5,22 @@ $(document).ready(function () {
     var chartLeftId = 1;
     var chartRightId = 1;
 
+    function minusChart() {
+        console.log(chartLeftId);
+
+        $('.binary__minus').click(function () {
+            console.log();
+            if (chartLeftId === 2) {
+                newChart1();
+                chartLeftId--;
+            } else if (chartLeftId === 3) {
+                newChartLeft2();
+                chartLeftId--;
+            }
+        });
+
+    }
+
     function newChart1() {
         var my_chart = new Treant({
             chart: {
@@ -1005,6 +1021,7 @@ $(document).ready(function () {
                                         '                                <span class="tree__value">11:15:52</span>\n' +
                                         '                            </div>\n' +
                                         '                        </div>\n' +
+                                            '<div class="binary__minus"></div>' +
                                         '                    </div>',
                                         children: [
                                             {
@@ -1641,6 +1658,8 @@ $(document).ready(function () {
 
         // $('.tree__parent').parent().addClass('bug');
 
+        minusChart();
+
         $('.tree__header').click(function (e) {
 
             if ($(this).hasClass("list-open")) {
@@ -1667,7 +1686,11 @@ $(document).ready(function () {
                 }
             });
         });
+
+
     }
+
+
 
     function newChartLeft3() {
         var my_chart = new Treant({
@@ -1979,6 +2002,7 @@ $(document).ready(function () {
                                                 '                                <span class="tree__value">11:15:52</span>\n' +
                                                 '                            </div>\n' +
                                                 '                        </div>\n' +
+                                                '<div class="binary__minus"></div>' +
                                                 '                    </div>',
                                                 children: [
                                                     {
@@ -2713,6 +2737,8 @@ $(document).ready(function () {
             }
         });
 
+        minusChart();
+
         $('.tree__header').click(function (e) {
 
             if ($(this).hasClass("list-open")) {
@@ -2738,6 +2764,8 @@ $(document).ready(function () {
                     $(this).find('.js-tree-list').fadeOut();
                 }
             });
+
+
         });
     }
 
@@ -4037,7 +4065,7 @@ $(document).ready(function () {
                         '                            <div class="affiliate-table__logo affiliate-table__logo_black tree__logo">\n' +
                         '                                <span>CL</span>\n' +
                         '                            </div>\n' +
-                        '                            <span class="tree__text">Cryptoconsulting</span>\n' +
+                        '                            <span class="tree__text">Cryptoconsulting1</span>\n' +
                         '                        </div>\n' +
                         '                        <div class="user-notify-list tree__list js-tree-list" style="display: none">\n' +
                         '                            <div class="user-notify-list__title tree__header-wrapper">\n' +
@@ -4132,7 +4160,7 @@ $(document).ready(function () {
                                         '                            <div class="affiliate-table__logo affiliate-table__logo_black tree__logo">\n' +
                                         '                                <span>CL</span>\n' +
                                         '                            </div>\n' +
-                                        '                            <span class="tree__text">Cryptoconsulting</span>\n' +
+                                        '                            <span class="tree__text">Cryptoconsulting2</span>\n' +
                                         '                        </div>\n' +
                                         '                        <div class="user-notify-list tree__list js-tree-list" style="display: none">\n' +
                                         '                            <div class="user-notify-list__title tree__header-wrapper">\n' +
@@ -4612,12 +4640,25 @@ $(document).ready(function () {
         if (chartLeftId === 1) {
             newChartLeft2();
             chartLeftId++;
-        } else if (chartLeftId=== 2) {
+        } else if (chartLeftId === 2) {
             newChartLeft3();
-            chartLeftId++;
         }
 
-    })
+        console.log(chartLeftId);
+
+    });
+
+
+    $('.binary__minus').click(function () {
+        cosnole.log('click');
+        if (chartLeftId === 1) {
+            newChartLeft1();
+            chartLeftId--;
+        } else if (chartLeftId === 2) {
+            newChartLeft2();
+            chartLeftId--;
+        }
+    });
 
 
 });
