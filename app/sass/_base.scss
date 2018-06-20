@@ -270,6 +270,10 @@ input, select {
   justify-content: space-between;
 }
 
+.mobile-logo {
+  display: none;
+}
+
 
 .marquee {
   width: 1195px; /* the plugin works for responsive layouts so width is not necessary */
