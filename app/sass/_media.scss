@@ -50,6 +50,10 @@
       position: relative;
       min-height: 875px;
 
+      &.navigation {
+        min-height: 550px;
+      }
+
       &__main {
         height: 100%;
       }
@@ -254,7 +258,8 @@
     }
 
     &__chart {
-      transform: translate(-28%, 0) scale(0.5);
+      left: 50%;
+      transform: translate(-50%, 0) scale(0.5);
       position: absolute;
       bottom: -6rem;
     }
@@ -262,6 +267,10 @@
     &__eye {
       left: 50%;
       transform: translateX(-50%);
+    }
+
+    &__item {
+      max-width: 100%;
     }
   }
 
@@ -274,7 +283,7 @@
 
       & .entry-shadow {
         display: block;
-        left: 0;
+        left: -0.1rem;
         width: 30%;
 
         & #Rectangle-8 {
@@ -299,6 +308,15 @@
     width: 100%;
   }
 
+}
+
+@media only screen and (max-device-width : 768px) and (orientation: landscape) {
+  .greeting__image {
+    position: absolute;
+    left: 50%;
+    top: 16rem;
+    transform: translate(-50%) scale(0.5);
+  }
 }
 
 

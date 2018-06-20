@@ -1394,9 +1394,11 @@
 <script>
     $('.hamburger').click(function () {
         $('.hamburger').toggleClass("is-active");
-        $('.landing-header__bar').slideToggle('medium', function () {
-
-        });
+        $('.landing-header__bar').slideToggle('slow');
+        $('.landing-header__main').fadeToggle();
+        $('.landing-header').toggleClass('navigation');
+        $('.landing-main').fadeToggle();
+        $('.landing-footer').fadeToggle();
         $('body').toggleClass('nonscroll');
     });
 </script>
