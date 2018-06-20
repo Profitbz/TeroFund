@@ -169,7 +169,10 @@
     padding-top: 2.4rem;
     padding-left: 9rem;
 
+    //width="166px" height="60px"
+
     & .entry-shadow {
+      height: 100%;
       position: absolute;
       bottom: 0;
       left: 9rem;
@@ -177,6 +180,7 @@
     }
 
     & .out-shadow {
+      height: 100%;
       position: absolute;
       bottom: 0;
       right: 6rem;

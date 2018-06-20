@@ -49,7 +49,10 @@
     &-header {
       position: relative;
       min-height: 875px;
-      display: none;
+
+      &__main {
+        height: 100%;
+      }
       &__bar {
         position: absolute;
         top:0;
@@ -179,11 +182,14 @@
       position: absolute;
       left: 3rem;
       bottom: 11rem;
-      min-width: 100vw;
-      width: 100vw;
+      width: 100%;
       flex-direction: column;
       padding: 0;
       align-items: flex-start;
+
+      & span {
+        width: 145px;
+      }
 
       &__item {
         padding-bottom: 1rem;
@@ -267,11 +273,24 @@
       padding-left: 0;
 
       & .entry-shadow {
-        left: -2.5rem;
+        display: block;
+        left: 0;
+        width: 30%;
+
+        & #Rectangle-8 {
+          height: 200px;
+        }
       }
 
       & .out-shadow {
-        right: -2.5rem;
+        right: -0.1rem;
+        width: 30%;
+        bottom: 0;
+
+        & #Rectangle-8 {
+          height: 200px;
+          y: 0;
+        }
       }
     }
   }
