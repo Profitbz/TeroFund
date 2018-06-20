@@ -5302,6 +5302,8 @@ xpopup
   html {
     min-width: 100%;
     max-width: 100vw; }
+  svg text {
+    font-family: "Core Sans X", sans-serif; }
   body {
     max-width: 100vw; }
   .container {
