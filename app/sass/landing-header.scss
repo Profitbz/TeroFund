@@ -13,6 +13,10 @@
     min-height: 0;
   }
 
+  &__logo_mobile {
+    display: none;
+  }
+
 
   &__bar {
     display: flex;

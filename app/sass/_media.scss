@@ -19,6 +19,261 @@
     overflow-x: hidden;
   }
 
+  body.nonscroll {
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 2rem;
+  }
+
+  header .landing-burger {
+    display: block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    z-index: 1001;
+  }
+
+
+  .landing {
+    &-section {
+      padding-bottom: 1rem;
+    }
+
+    &-header {
+      position: relative;
+      min-height: 875px;
+      &__bar {
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        background: #2A3156;
+        display: none;
+       flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+      }
+
+      &__container {
+        flex-direction: column;
+        padding: 0;
+        padding-left: 3rem;
+      }
+
+      &__logo {
+        order: -2;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+        &_mobile {
+          display: flex;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      &__nav {
+        order: 1;
+      }
+
+      &__btns {
+        order: -3;
+      }
+
+      &__item {
+        font-size: 15px;
+        padding: 1rem 0;
+      }
+
+      &__lang {
+        position: absolute;
+        top: 1rem;
+        right: 5rem;
+      }
+    }
+
+    &-footer {
+
+      &__container {
+        flex-direction: column;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      &__copy {
+        padding-right: 0;
+        padding-top: 2rem;
+        order: 2;
+      }
+
+      &__contacts {
+        justify-content: space-around;
+        width: 100%;
+        padding-top: 2rem;
+      }
+
+      &__item {
+        padding-right: 0;
+        &:first-child {
+          display: none;
+        }
+      }
+
+      &__address {
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+
+  .greeting {
+    padding: 0;
+
+    &__content {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 4rem;
+    }
+
+    &-nav {
+      display: none;
+    }
+
+    &__text {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 28px;
+      &_name {
+        font-size: 40px;
+      }
+    }
+
+    &__sub {
+      max-width: 100%;
+    }
+
+    &__info {
+      max-width: 95%;
+    }
+
+    &__image {
+      transform: translate(-19%, -15%) scale(0.5);
+    }
+
+    &-links {
+      position: absolute;
+      left: 3rem;
+      bottom: 11rem;
+      min-width: 100vw;
+      width: 100vw;
+      flex-direction: column;
+      padding: 0;
+      align-items: flex-start;
+
+      &__item {
+        padding-bottom: 1rem;
+
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .section-title {
+    padding: 0;
+  }
+
+  .terobot {
+    &-text {
+      padding: 1rem 0;
+    }
+  }
+
+  .advantages {
+    &__container {
+      padding: 0;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      flex-direction: column;
+    }
+
+    &__column {
+      padding-right: 0;
+    }
+
+    &__title {
+      padding-top: 1.5rem;
+    }
+
+    &__item {
+      max-width: 100%;
+      padding-top: 3rem;
+      min-height: 0;
+      &:last-child {
+        padding-top: 2rem;
+      }
+
+      &:first-child {
+        padding-top: 2rem;
+      }
+
+      &.advantages__item_first {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .works {
+    &__wrapper {
+      padding-left: 0;
+      flex-direction: column;
+      position: relative;
+      padding-bottom: 22rem;
+    }
+
+    &__chart {
+      transform: translate(-28%, 0) scale(0.5);
+      position: absolute;
+      bottom: -6rem;
+    }
+
+    &__eye {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  .founds {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    &__wrapper {
+      padding-left: 0;
+
+      & .entry-shadow {
+        left: -2.5rem;
+      }
+
+      & .out-shadow {
+        right: -2.5rem;
+      }
+    }
+  }
+
+  .marquee {
+    width: 100%;
+  }
+
 }
 
 

@@ -8,6 +8,8 @@
   .landing-header_white {
     background: none;
     min-height: 0; }
+  .landing-header__logo_mobile {
+    display: none; }
   .landing-header__bar {
     display: -webkit-box;
     display: -webkit-flex;
