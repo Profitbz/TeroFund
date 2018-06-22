@@ -91,8 +91,8 @@ input, select {
 .main-container {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  max-width: 1010px;
-  min-width: 1010px;
+  max-width: 100%;
+  min-width: 100%;
   transition: all 0.6s;
 }
 
@@ -103,8 +103,8 @@ input, select {
 
 .main-container.opened {
   transition: all 0.6s;
-  max-width: 1256px;
-  min-width: 1256px;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .main-container.space-between.opened {
@@ -141,6 +141,11 @@ input, select {
 
 .main-btn:active {
   background: #0222D5;
+}
+
+.page-content {
+  width: 100%;
+  padding-right: 6.6%;
 }
 
 .highcharts-data-label-connector {

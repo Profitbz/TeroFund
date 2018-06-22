@@ -12,7 +12,7 @@
   display: flex;
   cursor: pointer;
   font-weight: bold;
-  margin-left: 10.2rem;
+  margin-left: 11.3vw;
 }
 
 .aside-btn__text {
@@ -148,13 +148,13 @@
   &_left {
     position: absolute;
     top: 7.5rem;
-    left: 21rem;
+    left: 23.3%;
   }
 
   &_right {
     position: absolute;
     top: 7.5rem;
-    right: 5.6rem;
+    right: 6.5%;
   }
 
   &__head {
@@ -181,7 +181,7 @@
   }
 
   &__main {
-    width: 491px;
+    width: 34vw;
     height: 60px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
@@ -195,7 +195,7 @@
 
   &__container {
     &_sub {
-      width: 215px;
+      width: 15vw;
     }
   }
 

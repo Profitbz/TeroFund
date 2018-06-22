@@ -69,13 +69,13 @@
     &__container {
       position: absolute;
       top: 0;
-      left: -6rem;
+      left: -10%;
       height: 280px;
       min-width: 1200px;
       margin: 0 auto;
 
       &.opened {
-        min-width: 1450px;
+        min-width: 120%;
       }
     }
   }

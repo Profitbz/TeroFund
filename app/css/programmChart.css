@@ -49,12 +49,12 @@
   .programm-chart__container {
     position: absolute;
     top: 0;
-    left: -6rem;
+    left: -10%;
     height: 280px;
     min-width: 1200px;
     margin: 0 auto; }
     .programm-chart__container.opened {
-      min-width: 1450px; }
+      min-width: 120%; }
 
 /* Define the stop colors */
 #gradient-0 stop {

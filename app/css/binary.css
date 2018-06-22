@@ -4,7 +4,9 @@
   height: 100%; }
 
 .node.bug {
-  left: 485px !important; }
+  -webkit-transform: translateX(-3%);
+      -ms-transform: translateX(-3%);
+          transform: translateX(-3%); }
 
 .binary {
   display: -webkit-box;

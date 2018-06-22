@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+    const initialWidth = $('.main-container').width();
+
+    console.log(initialWidth * 1.2);
+
     var isOpened = true;
 
     var lineChart = Highcharts.chart('programmChart', {
@@ -96,13 +100,17 @@ $(document).ready(function () {
     });
 
     $('.aside-btn').click(function () {
-        if (isOpened) {
-            lineChart.setSize(1200, 280);
-            isOpened = false;
-        } else {
-            lineChart.setSize(1450, 280);
-            isOpened = true;
-        }
+        // if ($(document).width > 1024) {
+            console.log('resize');
+            if (isOpened) {
+                lineChart.setSize(initialWidth * 0.98, 280);
+                isOpened = false;
+            } else {
+                lineChart.setSize(initialWidth * 1.2, 280);
+                isOpened = true;
+            }
+        // }
+
 
     });
 });
