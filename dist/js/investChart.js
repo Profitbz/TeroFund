@@ -242,14 +242,16 @@ $(document).ready(function () {
     });
 
     $('.aside-btn').click(function () {
-        if (isOpened) {
-            lineChart1.setSize(1050, 280);
-            lineChart2.setSize(1050, 280);
-            isOpened = false;
-        } else {
-            lineChart1.setSize(1280, 280);
-            lineChart2.setSize(1280, 280);
-            isOpened = true;
+        if ($(document).width() > 1024) {
+            if (isOpened) {
+                lineChart1.setSize(1050, 280);
+                lineChart2.setSize(1050, 280);
+                isOpened = false;
+            } else {
+                lineChart1.setSize(1280, 280);
+                lineChart2.setSize(1280, 280);
+                isOpened = true;
+            }
         }
 
     });

@@ -2,7 +2,6 @@ $(document).ready(function () {
 
     const initialWidth = $('.main-container').width();
 
-    console.log(initialWidth * 1.2);
 
     var isOpened = true;
 
@@ -98,9 +97,11 @@ $(document).ready(function () {
             data: [4, 7, 3, 8, 3, 7, 3, 6, 8 ]
         }]
     });
+    console.log($(document).width());
+
 
     $('.aside-btn').click(function () {
-        // if ($(document).width > 1024) {
+        if ($(document).width() > 1024) {
             console.log('resize');
             if (isOpened) {
                 lineChart.setSize(initialWidth * 0.98, 280);
@@ -109,8 +110,6 @@ $(document).ready(function () {
                 lineChart.setSize(initialWidth * 1.2, 280);
                 isOpened = true;
             }
-        // }
-
-
+        }
     });
 });

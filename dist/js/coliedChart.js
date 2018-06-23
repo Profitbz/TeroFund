@@ -1,11 +1,17 @@
 $(document).ready(function () {
+let  spacing;
+    if ($(document).width() < 1200) {
+       spacing = 60;
+    } else {
+        spacing = 52;
+    }
 
     var isOpened = true;
 
     var lineChart1 = Highcharts.chart('coliedChart', {
         chart: {
             type: 'column',
-            spacingTop: 52
+            spacingTop: spacing
         },
         title: {
             text: ' '
@@ -118,12 +124,14 @@ $(document).ready(function () {
 
 
     $('.aside-btn').click(function () {
-        if (isOpened) {
-            lineChart1.setSize(900, 400);
-            isOpened = false;
-        } else {
-            lineChart1.setSize(1100, 400);
-            isOpened = true;
+        if ($(document).width() > 1024) {
+            if (isOpened) {
+                lineChart1.setSize(900, 400);
+                isOpened = false;
+            } else {
+                lineChart1.setSize(1100, 400);
+                isOpened = true;
+            }
         }
 
     });
