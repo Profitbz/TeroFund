@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    const initialWidth = $('.main-container').width();
+    console.log(initialWidth)
+
     var isOpened = true;
 
     var lineChart1 = Highcharts.chart('investReportChart1', {
@@ -74,7 +77,11 @@ $(document).ready(function () {
             gridLineWidth: 0
         },
 
-        tooltip: false,
+        tooltip: {
+            formatter: function () {
+                return   this.y + ' USD';
+            }
+        },
         plotOptions: {
             area: {
                 marker: {
@@ -193,7 +200,11 @@ $(document).ready(function () {
             gridLineWidth: 0
         },
 
-        tooltip: false,
+        tooltip: {
+            formatter: function () {
+                return   this.y + ' USD';
+            }
+        },
         plotOptions: {
             area: {
                 marker: {
@@ -244,13 +255,14 @@ $(document).ready(function () {
     $('.aside-btn').click(function () {
         if ($(document).width() > 1024) {
             if (isOpened) {
-                lineChart1.setSize(1050, 280);
-                lineChart2.setSize(1050, 280);
+                lineChart1.setSize(initialWidth * 0.8, 280);
+                lineChart2.setSize(initialWidth * 0.8, 280);
                 isOpened = false;
             } else {
-                lineChart1.setSize(1280, 280);
-                lineChart2.setSize(1280, 280);
+                lineChart1.setSize(initialWidth * 1, 280);
+                lineChart2.setSize(initialWidth * 1, 280);
                 isOpened = true;
+                console.log(initialWidth * 1);
             }
         }
 

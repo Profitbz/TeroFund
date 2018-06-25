@@ -4620,8 +4620,8 @@ xpopup
 
 .investReportChart {
   height: 280px;
-  min-width: 1280px;
-  max-width: 1280px;
+  min-width: 100%;
+  max-width: 100%;
   position: absolute;
   left: -2rem;
   top: 4.2rem; }

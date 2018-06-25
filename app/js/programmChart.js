@@ -50,7 +50,12 @@ $(document).ready(function () {
             gridLineWidth: 0
         },
 
-         tooltip: false,
+        tooltip: {
+            formatter: function () {
+                return   this.y + ' %';
+            }
+        },
+
         plotOptions: {
             area: {
                 marker: {
