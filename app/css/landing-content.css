@@ -157,7 +157,7 @@
       height: 100%;
       position: absolute;
       bottom: 0;
-      right: 6rem;
+      right: 0;
       -webkit-transform: rotate(180deg);
           -ms-transform: rotate(180deg);
               transform: rotate(180deg);
