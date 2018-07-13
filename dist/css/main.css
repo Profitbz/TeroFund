@@ -49,7 +49,8 @@ span, a {
 
 button {
   border: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-appearance: none; }
   button:focus {
     outline: none; }
 
