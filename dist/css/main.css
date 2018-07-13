@@ -50,9 +50,11 @@ span, a {
 button {
   border: none;
   cursor: pointer;
-  -webkit-appearance: none; }
-  button:focus {
-    outline: none; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
 
 input, select {
   font-family: "Core Sans X", sans-serif;
@@ -60,7 +62,8 @@ input, select {
   font-weight: inherit;
   font-size: inherit;
   padding: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  -webkit-appearance: none; }
 
 .current {
   padding-top: 2px; }
@@ -6545,7 +6548,9 @@ xpopup
     padding-top: 1rem; }
   .profile__footer_empty {
     padding-top: 1rem;
-    padding-bottom: 1rem; } }
+    padding-bottom: 1rem; }
+  .lang-change::after {
+    display: none; } }
 
 @media screen and (min-width: 350px) and (max-width: 400px) {
   .programm-chart {
